@@ -158,6 +158,7 @@ module.exports = {
       gray: "#808080",
       gray1: "#BBBBBB",
       gray2: "#BDBDBD",
+      lightgray: "#D5D5D5",
       "blue-yonder": "#4267B2",
       "YInMn-blue": "#304989",
       bubbles: "#E4F3FF",
@@ -312,6 +313,7 @@ module.exports = {
       90: "90px",
       112: "112px",
       120: "120px",
+      266: "266px"
     },
     padding: {
       0: "0",
@@ -487,6 +489,7 @@ module.exports = {
       26: "26px",
       26.4: "26.4px",
       27: "27px",
+      28: "28px",
       30: "30px",
       32: "32px",
       32.3: "32.3px",
@@ -539,6 +542,7 @@ module.exports = {
       285: '285px',
       286: "286px",
       300: "300px",
+      320: "320px",
       372: "372px",
       390: "390px",
       400: "400px",
