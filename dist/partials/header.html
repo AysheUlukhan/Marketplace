@@ -1,0 +1,330 @@
+<!--header-->
+<header class="fixed top-0 left-0 w-full 2xl:h-90 xl:h-90 lg:h-60 md:h-60 h-50 z-100 bg-white flex items-center justify-between shadow-black-shadow-xs px-12 lg:px-20 md:px-20 2xl:px-34 xl:px-34 pt-15 pb-12 lg:pt-12 md:pt-12 2xl:py-20 xl:py-20">
+  <div title="logo" class="mr-auto 3xl:mr-49">
+    <a href="/" title="logo" className="mr-49">
+      <span class="sr-only">Your Company</span>
+
+      <img src="img/logo.svg" alt="logo" width="176px" height="49px" class='w-116 2xl:w-176 xl:w-176' />
+    </a>
+  </div>
+
+  <div class="hidden 2xl:flex xl:flex flex-row">
+    <a
+      title="title"
+      href="#"
+      class="whitespace-nowrap inline text-14 leading-5 text-black underline ml-41"
+    >
+      Mağazanı yarat
+    </a>
+
+    <a
+      title="title"
+      href="/account/help/help"
+      class="inline text-14 leading-5 text-black ml-41"
+    >
+      Yardım
+    </a>
+
+    <div class="flex items-center mx-66">
+      <div class="relative">
+    <div class="flex items-center cursor-pointer">
+        <img src="img/tr.svg" width="19px" height="14px" alt="tr" />
+
+        <div class="ml-7 mr-10 text-14 leading-5 text-black">
+            Türkiye
+            <span class="text-silver-sand opacity-30 mx-5">
+            |
+            </span>
+            TR
+            <span class="text-silver-sand opacity-30 mx-5">
+            |
+            </span>
+            TRY
+        </div>
+
+        <img
+            src="img/down-drop.svg"
+            width="6px"
+            height="4px"
+            alt="down-arrow"
+        />
+    </div>
+
+    <!--if show dropdown--> 
+
+        <!-- <div class="absolute top-9 -left-22 w-216 bg-white shadow-dropdown-shadow rounded-6 
+        before:content[] before:absolute before:-top-2 before:left-6 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-10 before:rotate-45 before:rounded-1"
+      >
+        <div class="pt-13 pb-18 pl-12 pr-16 relative z-30">
+            <div class="mb-12">
+                <p class="text-13 leading-4 text-davys-grey font-semibold mb-7">
+                    Ülke
+                </p>
+                <div class="border border-solid border-platinum rounded-8 bg-snow h-40 px-7">
+                <select
+                    name="countries"
+                    id="countries"
+                    value=""
+                    class="cursor-pointer h-full bg-transparent text-14 leading-5 text-davys-grey text-opacity-80 relative w-full focus:outline-none"
+                >
+                    <option value="Türkiye">Türkiye</option>
+                    <option value="Azerbaycan">Azerbaycan</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <p class="text-13 leading-4 text-davys-grey font-semibold mb-7">
+                    Dil
+                </p>
+                <div class="border border-solid border-platinum rounded-8 bg-snow h-40 px-7">
+                <select
+                    name="languages"
+                    id="languages"
+                    value=""
+                    class="cursor-pointer h-full bg-transparent text-14 leading-5 text-davys-grey text-opacity-80 relative w-full focus:outline-none"
+                >
+                    <option value="TR">Türk</option>
+                    <option value="AZ">Azerbaycan</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <p class="text-13 leading-4 text-davys-grey font-semibold mb-7">
+                    Para birimi
+                </p>
+                <div class="border border-solid border-platinum rounded-8 bg-snow h-40 px-7">
+                    <select
+                        name="currency"
+                        id="currency"
+                        value=""
+                        class="cursor-pointer h-full bg-transparent text-14 leading-5 text-davys-grey text-opacity-80 relative w-full focus:outline-none"
+                    >
+                        <option value="TRY">TRY</option>
+                        <option value="AZN">AZN</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="rounded-8 bg-vivid-cerise w-full h-40 text-base leading-5 text-white font-semibold flex items-center justify-center">
+                Kaydet
+            </button>
+        </div>
+    </div> -->
+
+    <!--if show dropdown--> 
+</div>
+    </div>
+  </div>
+
+  <div class="hidden 2xl:block xl:block ml-14 mr-39 border-solid border border-silver-sand border-opacity-30 rounded-18 w-610 h-50 bg-cultured pl-14 pr-9">
+    <form
+      action=""
+      class="flex items-center h-full justify-between"
+    >
+      <label class="relative flex items-center h-full w-full">
+        <span class="sr-only">Search</span>
+        <span className="flex items-center">
+          <img
+            width="20px"
+            height="20px"
+            src="img/search.svg"
+            alt="search"
+          />
+        </span>
+        <input
+          class="placeholder:text-black placeholder:text-opacity-40 placeholder:text-base placeholder:leading-5 block bg-transparent
+                    text-base leading-5 text-black w-full px-14 focus:outline-none"
+          placeholder="Aradığınız herşey burada"
+          type="text"
+          name="search"
+        />
+      </label>
+      <button class="rounded-12 bg-vivid-cerise text-white shadow-black-shadow-xs pt-6 pb-8 text-base leading-5 font-semibold px-15 whitespace-nowrap">
+        Arama yap
+      </button>
+    </form>
+  </div>
+
+  <div class="hidden 2xl:flex xl:flex flex-row items-center">
+    <a
+      title="title"
+      href="/account/orders/my-orders"
+      class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41"
+    >
+      <img
+        width="19px"
+        height="20px"
+        src="img/order.svg"
+        alt="order"
+      />
+      <span class="inline mt-8">Siparişlerim</span>
+    </a>
+
+    <a
+      title="title"
+      href="/my-favorites"
+      class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41"
+    >
+      <img
+        width="20px"
+        height="20px"
+        src="img/fav.svg"
+        alt="fav"
+      />
+  
+      <span class="inline mt-8">Favorilerim</span>
+    </a>
+
+    <div class="ml-20 2xl:ml-41">
+    <div class="flex flex-col justify-center items-center text-14 leading-5 text-black cursor-pointer">
+        <div class="relative">
+          <img
+            width="18px"
+            height="20px"
+            src="img/cart.svg"
+            alt="fav"
+          />
+          
+          <span class="absolute -top-1 -right-4 rounded-half bg-vivid-cerise w-16 h-16 text-12 leading-4 font-semibold text-white text-center flex items-center justify-center">
+            2
+          </span>
+        </div>
+        <span class="inline mt-8">Sepetim</span>
+    </div>
+
+    <!--if show dropdown--> 
+
+        <!-- <div class="fixed right-0 top-24 -mt-6 w-full h-full z-80">
+            <div class="bg-black w-full h-full opacity-60 overflow-hidden"></div>
+        
+            <div class="absolute right-0 top-0 w-400 bg-transparent">
+                <div class='bg-white1'>
+                    <div class="flex items-center justify-between pl-26 pt-26 pb-23 pr-23 shadow-black-shadow-3md">
+                        <h6 class="font-semibold text-base leading-5 tracking-wider text-granite-gray">
+                            ÜRÜN SAYI: 
+                            <span class="text-black ml-5">
+                            6
+                            </span>
+                        </h6>
+
+                        <div class="cursor-pointer">
+                            <AiOutlineClose />
+                        </div>
+                    </div>
+
+                    <div class="pl-25 pr-19 h-screen">
+                        <div class="pr-19 pb-310 overflow-y-scroll h-full">
+
+                            <div class="flex items-center py-20 mr-19 border-b border-b-solid border-b-bright-gray3">
+                                <div class="w-67 h-101 border border-solid border-cultured2 mr-20 rounded-4 overflow-hidden">
+                                    <img src="img/cart-item.jpg" alt="cart-item" width="67px" height="101px" class="w-full h-full object-cover"/>
+                                </div>
+
+                                <div class="relative w-70per">
+                                    <h6 class="text-12 leading-4 text-black-olive font-semibold tracking-wider mb-6">
+                                        Tonny Black
+                                    </h6>
+
+                                    <p class="text-12 leading-4 text-granite-gray tracking-wider mb-6">
+                                        Beyaz Cilt Kadın  Sneaker BLS-Q-1
+                                    </p>
+
+                                    <p class="text-14 leading-5 text-vivid-cerise font-semibold mb-11">
+                                        110,49 TL
+                                    </p>
+
+                                    <div class="inline-flex rounded-7.27 bg-white border border-solid border-platinum">
+                                        <button class="text-24 leading-7 text-quick-silver1 w-32 flex items-center justify-center">
+                                        -
+                                        </button>
+
+                                        <div class="text-14 leading-5 text-chinese-black border-l-0.9 border-l-solid border-l-platinum border-r-0.9 border-r-solid border-r-platinum bg-snow flex items-center justify-center px-15">
+                                        1
+                                        </div>
+
+                                        <button class="text-24 leading-7 text-quick-silver1 w-32 flex items-center justify-center">
+                                        +
+                                        </button>
+                                    </div>
+
+                                    <button class="absolute -right-2 top-0">
+                                        <AiOutlineClose class="text-granite-gray text-12" />
+                                    </button>
+                                </div>
+                            </div>
+                           
+                            <div class="shadow-black-shadow-3md fixed bottom-0 right-0 pt-21 pb-23 px-26 w-400 bg-white1 z-30">
+                                <div class="flex justify-between items-center mb-13">
+                                    <span class="text-granite-gray text-18 leading-6 font-bold tracking-wider">
+                                        TOPLAM:
+                                    </span>
+                                    <span class="text-24 leading-10 text-vivid-cerise font-black">
+                                        482,98 TL
+                                    </span>
+                                </div>
+                                <button 
+                                class="rounded-6 bg-vivid-cerise text-18 leading-6 font-bold tracking-wider text-white w-full h-50 flex items-center justify-center">
+                                    <a href="/auth/non-member-login" title="cart">
+                                        SEPETE GİT
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+    <!--if show dropdown--> 
+</div>
+
+    <!--if not sign in-->
+    <div class="relative">
+    <div class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41 cursor-pointer">
+        <img
+        width="18px"
+        height="20px"
+        src="img/user.svg"
+        alt="user"
+        />
+        <span class="inline mt-8">Hesabım</span>
+    </div>
+
+    <!--if show dropdown--> 
+
+        <!-- <div class="block absolute top-full -right-3 mt-10 w-224 rounded-6 p-22 pt-20 bg-white shadow-dropdown-shadow
+        before:content[] before:absolute before:-top-2 before:right-7 before:w-16 before:h-16 before:black-shadow-sm before:bg-white before:z-10 before:rotate-45 before:rounded-1"
+        >
+            
+            <a title='Giriş yapın' href='/login.html'
+            class="rounded-6 bg-vivid-cerise w-full h-40 text-base leading-5 text-white tracking-wider font-semibold flex items-center justify-center mb-10"
+            >
+                Giriş yapın
+            </a>
+
+            <a title='Yeni üye' href='/register.html'
+            class="rounded-6 bg-transparent text-granite-gray border border-solid border-light-silver1 w-full h-40 text-base leading-5 tracking-wider font-semibold flex items-center justify-center"
+            >
+                Yeni üye
+            </a>
+        
+        </div>  -->
+
+    <!--if show dropdown--> 
+</div>
+    <!--if not sign in-->
+
+
+    <!--if sign in-->
+    
+    <!--if sign in-->
+
+  </div>
+  <div class="2xl:hidden xl:hidden cursor-pointer">
+    <img src="../img/search.svg" />
+  </div>
+
+</header>
+<!--header-->

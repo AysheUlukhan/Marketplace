@@ -1,0 +1,33 @@
+<div class="flex flex-col pt-13 pb-21">
+    <button class="flex flex-row justify-between items-center" onClick={handleOpen}>
+      <span class="text-base text-vivid-cerise font-semibold leading-5">
+        Fiyat Aralığı
+      </span>
+      <FaAngleDown class="text-vivid-cerise" />
+    </button>
+
+    <!--if opened dropdown-->
+      <form class="flex items-end mt-21">
+
+        <div class="flex flex-col w-calc88/2">
+            <label htmlFor="min-price w-min" class="text-14 leading-4 text-quick-silver">Min Tl</label>
+            <input class="mt-6 border px-10 py-11 border-platinum rounded-11 placeholder:text-14 placeholder:leading-4 placeholder:text-gainsboro text-14 leading-4 outline-none" 
+            id="min-price" type='number' placeholder="0" />
+        </div>
+         
+        <div class="text-eerie-black flex items-center justify-center text-14 leading-4 h-40 mx-4">
+            -
+        </div>
+
+        <div class="flex flex-col w-calc88/2">
+            <label htmlFor="max-price" class="text-14 leading-4 text-quick-silver">Max Tl</label>
+            <input class="mt-6 border px-10 py-11 border-platinum rounded-11 placeholder:text-14 placeholder:leading-4 placeholder:text-gainsboro text-14 leading-4 outline-none" 
+            id="max-price" type='number' placeholder="0" />
+        </div>
+        
+        <button class="bg-vivid-cerise px-26 py-12 flex justify-center rounded-11 w-maxContent ml-7">
+            <AiOutlineSearch class="text-white text-base" />
+        </button>
+      </form>
+    <!--if opened dropdown-->
+</div>

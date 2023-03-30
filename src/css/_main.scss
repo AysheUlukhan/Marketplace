@@ -1,0 +1,173 @@
+/* features */
+.features-sec-back {
+    background: linear-gradient(180deg, #E9EBF1 0%, rgba(248, 248, 248, 0) 84.56%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.feature-border-pink {
+    background: linear-gradient(266.74deg, #FFA4A4 -0.4%, #C265FC 102.18%);
+}
+
+.feature-border-green {
+    background: linear-gradient(266.7deg, #A9C018 -0.41%, #72BE36 100%);
+}
+
+.feature-border-blue {
+    background: linear-gradient(266.7deg, #8CE3FE -0.41%, #5BA0C8 100%);
+}
+
+
+/* color-circle-radio button for product colors */
+.color-circle-radio input[type="radio"]:checked + span {
+  width: 16px;
+  height: 16px;
+  box-shadow: 0px 0px 0px 2px white inset;
+  border-color: #D9D9D9;
+}
+
+
+/* color-circle-radio button for product colors */
+.color-circle-detail-radio input[type="radio"]:checked + span {
+  box-shadow: 0px 0px 0px 5px white inset;
+  border-color: #000;
+}
+
+
+/* custom range */
+.custom-range::-webkit-slider-thumb {
+  appearance:  none;
+  background-color: #E11A7D;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0px 4px 4px rgba(217, 7, 9, 0.23);
+  border-radius: 12px;
+} 
+
+
+/* gender radio button */
+.gender-radio input[type="radio"]:checked + div {
+    border-color: #E11A7D;
+}  
+
+.gender-radio input[type="radio"]:checked + div span {
+    color: rgba(0, 0, 0, .8);
+} 
+
+/* accept checkbox for register */
+.accept-checkbox input[type="checkbox"]:checked + span {
+    border-color: #E11A7D;
+    background-image: url('/images/checkbox.svg');
+}
+
+/* custom radio */
+.custom-radio input[type="radio"]:checked + span {
+    border-color: #E11A7D;
+    background-image: url('/images/checkbox.svg');
+}
+
+/* switch radio */
+.switch input:checked + span:before {
+   @apply left-0;
+}
+
+/* remove spinner number type input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none m-0;
+}
+
+
+
+
+/* pink linear gradient */
+.pink-gradient {
+    background: linear-gradient(78.34deg, #E11A7D -27.11%, #FFA6D2 109.13%);
+}
+
+
+/* green linear gradient */
+.green-gradient {
+  background: linear-gradient(22.79deg, #0BC15C -2.92%, #3DDB24 126.87%);
+}
+
+
+/* white linear gradient */
+
+.white-gradient {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 42.71%);
+}
+
+
+/* cultured linear gradient */
+
+.cultured-gradient {
+  background: linear-gradient(180deg, rgba(248, 248, 248, 0) 0%, #F8F8F8 27.87%);
+}
+
+
+
+/* subscribe background */
+.subscribe {
+    background: linear-gradient(81.56deg, #E11A7D 21.61%, #FFA6D2 100.81%);
+}
+
+/* swiper dots */
+
+.hero-section .swiper .swiper-pagination {
+    @apply left-8 bottom-14 text-left w-maxContent;
+}
+
+.product-carousel .swiper .swiper-pagination {
+    @apply static mt-40;
+}
+
+.swiper .swiper-pagination-bullet {
+    @apply bg-white opacity-100;
+}
+
+.swiper .swiper-pagination-bullet:not(:last-child) {
+  margin: 0 10px 0 0 !important;
+}
+
+.swiper .swiper-pagination-bullet:last-child {
+  margin: 0 !important;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  width: 26px;
+  border-radius: 100px;
+  background: #E11A7D;
+}
+
+.store-carousel .swiper .swiper-pagination {
+    @apply static mt-20;
+}
+
+.swiper .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    background: #fff;
+}
+
+.store-carousel .swiper .swiper-pagination-bullet-active {
+  @apply w-8;
+}
+
+/* menu */
+.menuItem:nth-last-child(-n+3) div {
+  left: auto;
+  right: 0;
+}
+
+.menuItem:nth-last-child(-n+3) div::before {
+  left: auto;
+  right: 16px;
+}
+
+.menuItem:nth-last-child(-n+8) div {
+  left: auto;
+  right: 0;
+}
+
+.menuItem:nth-last-child(-n+8) div::before {
+  left: auto;
+  right: 16px;
+}

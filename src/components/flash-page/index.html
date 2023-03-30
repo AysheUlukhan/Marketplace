@@ -1,0 +1,28 @@
+<div class='container max-w-full'> 
+    @@include('../flash-page/flash-discount.html')
+
+    <div class='flex flex-row py-24'>
+        <div class='w-20per'>
+            @@include('../product-category/category-filter.html')
+            @@include('../product-category/brand-filter.html')
+            @@include('../product-category/color-filter.html')
+            @@include('../product-category/price-filter.html')
+        </div>
+
+        <div class='w-80per pl-30'>
+            <div class='grid grid-cols-4 gap-5'>
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+                @@include('../product/product-card.html')
+            </div>
+        </div>
+    </div>
+</div>

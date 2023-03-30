@@ -1,0 +1,109 @@
+<!--header-->
+<header class="fixed top-0 left-0 w-full 2xl:h-90 xl:h-90 lg:h-60 md:h-60 h-50 z-100 bg-white flex items-center justify-between shadow-black-shadow-xs px-12 lg:px-20 md:px-20 2xl:px-34 xl:px-34 pt-15 pb-12 lg:pt-12 md:pt-12 2xl:py-20 xl:py-20">
+  <div title="logo" class="mr-auto 3xl:mr-49">
+    <a href="/" title="logo" className="mr-49">
+      <span class="sr-only">Your Company</span>
+
+      <img src="img/logo.svg" alt="logo" width="176px" height="49px" class='w-116 2xl:w-176 xl:w-176' />
+    </a>
+  </div>
+
+  <div class="hidden 2xl:flex xl:flex flex-row">
+    <a
+      title="title"
+      href="#"
+      class="whitespace-nowrap inline text-14 leading-5 text-black underline ml-41"
+    >
+      Mağazanı yarat
+    </a>
+
+    <a
+      title="title"
+      href="/account/help/help"
+      class="inline text-14 leading-5 text-black ml-41"
+    >
+      Yardım
+    </a>
+
+    <div class="flex items-center mx-66">
+      @@include('../components/dropdowns/location-dropdown.html')
+    </div>
+  </div>
+
+  <div class="hidden 2xl:block xl:block ml-14 mr-39 border-solid border border-silver-sand border-opacity-30 rounded-18 w-610 h-50 bg-cultured pl-14 pr-9">
+    <form
+      action=""
+      class="flex items-center h-full justify-between"
+    >
+      <label class="relative flex items-center h-full w-full">
+        <span class="sr-only">Search</span>
+        <span className="flex items-center">
+          <img
+            width="20px"
+            height="20px"
+            src="img/search.svg"
+            alt="search"
+          />
+        </span>
+        <input
+          class="placeholder:text-black placeholder:text-opacity-40 placeholder:text-base placeholder:leading-5 block bg-transparent
+                    text-base leading-5 text-black w-full px-14 focus:outline-none"
+          placeholder="Aradığınız herşey burada"
+          type="text"
+          name="search"
+        />
+      </label>
+      <button class="rounded-12 bg-vivid-cerise text-white shadow-black-shadow-xs pt-6 pb-8 text-base leading-5 font-semibold px-15 whitespace-nowrap">
+        Arama yap
+      </button>
+    </form>
+  </div>
+
+  <div class="hidden 2xl:flex xl:flex flex-row items-center">
+    <a
+      title="title"
+      href="/account/orders/my-orders"
+      class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41"
+    >
+      <img
+        width="19px"
+        height="20px"
+        src="img/order.svg"
+        alt="order"
+      />
+      <span class="inline mt-8">Siparişlerim</span>
+    </a>
+
+    <a
+      title="title"
+      href="/my-favorites"
+      class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41"
+    >
+      <img
+        width="20px"
+        height="20px"
+        src="img/fav.svg"
+        alt="fav"
+      />
+  
+      <span class="inline mt-8">Favorilerim</span>
+    </a>
+
+    @@include('../components/dropdowns/cart-dropdown.html')
+
+    <!--if not sign in-->
+    @@include('../components/dropdowns/login-dropdown.html')
+    <!--if not sign in-->
+
+
+    <!--if sign in-->
+    <!-- @@include('../components/dropdowns/account-dropdown.html') -->
+    <!--if sign in-->
+
+  </div>
+  <div class="2xl:hidden xl:hidden cursor-pointer">
+    <img src="../img/search.svg" />
+  </div>
+
+</header>
+<!--header-->

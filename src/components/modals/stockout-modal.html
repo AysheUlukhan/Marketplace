@@ -1,0 +1,56 @@
+<div class="flex justify-center fixed top-0 right-0 bottom-0 left-0 h-screen z-100">
+    <div class="bg-black w-full h-full opacity-60"></div>
+
+    <div class="bg-white opacity-100 w-26per pb-33 pt-21 px-59 z-100 absolute top-20 self-center rounded-8 shadow-black-shadow-2md">
+        <div>
+            <button class="absolute top-5 right-5 w-32 h-32 rounded-half bg-vivid-cerise text-base text-white flex items-center justify-center z-10">
+                <AiOutlineClose class='text-21' />
+            </button>
+
+            <div class='text-center'>
+                <h5 class='text-22 leading-7 font-bold tracking-wider text-black'>
+                    GELİNCE BANA BİLDİR
+                </h5>
+
+                <p class='text-12 leading-5 text-spanish-gray1 my-11'>
+                    ÜRÜN STOKTA OLDUĞUNDA SİZİ HABERDAR <br/> ETMEMİZİ İSTER MİSİNİZ?
+                </p>
+            </div>
+
+            <form action=''>
+                <div class="flex flex-col">
+                    <label class="text-14 leading-5 text-black text-opacity-80 mb-10">
+                        E-posta adresi
+                    </label>
+                    <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                        type="e-mail"
+                        placeholder="E-posta adresinizi yazın"
+                    />
+                </div>
+
+                <label class="accept-checkbox flex items-center text-14 leading-5 text-black my-26">
+                    <input class="hidden" type="checkbox" name="accept" />
+
+                    <span class="block w-22 h-22 rounded-8 border-2 border-solid border-light-silver1 mr-11 bg-no-repeat bg-center cursor-pointer"></span>
+
+                    <p class="w-calc22">
+                        <span class='underline cursor-pointer mr-4'>
+                            Kullanım ve Gizlilik Sözleşmesini
+                        </span> 
+                        okudum, onaylıyorum.
+                    </p>
+                </label>
+
+                <button type="submit" 
+                class="w-55per mx-auto block rounded-6 bg-vivid-cerise shadow-fashion-fuchsia text-white text-base leading-5 font-semibold tracking-wider py-10 cursor-pointer">
+                    Kabul et
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--if success then open this modal-->
+<!-- @@include('./stockout-success-modal.html') -->
+<!--if success then open this modal-->
