@@ -1,0 +1,580 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                Sİparİşlerİm
+            </h6>
+        </div>
+
+        <div class="col-span-9 flex justify-end relative">
+            <button>
+                <div class="flex flex-row items-center">
+                <span class="text-13 leading-4 text-black">Son 1 ay</span>
+                <FaAngleDown class="text-davys-grey text-opacity-50 ml-9" />
+                </div>
+            </button>
+
+            <!--if show dropdown-->
+            <!-- <div class="block absolute top-full -right-8 mt-22 z-10 rounded-6 px-23 pt-23 pb-29 bg-white shadow-dropdown-shadow w-maxContent
+            before:content[] before:absolute before:-top-2 before:right-7 before:w-16 before:h-16 before:black-shadow-sm before:bg-white before:z-10 before:rotate-45 before:rounded-1" 
+            >
+                <ul class='text-13 leading-4'>
+                    <li class='text-vivid-cerise mb-13 last:mb-0 cursor-pointer'> <!--if active item-->
+                        <!-- Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+                </ul>
+            </div> -->
+            <!--if show dropdown-->
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        <div class="col-span-3">
+    <div class="rounded-6 py-5 px-24 bg-white leading-10">
+
+        <a title="Siparişlerim" href="/account-orders-page.html" class="flex items-center my-15"> <!--active item-->
+            <img src="img/siparislerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-vivid-cerise text-base font-semibold ml-20'>
+                Siparişlerim
+            </span>
+        </a>
+
+        <a title="Değerlendirmelerim" href="/account-assessments-page.html" class="flex items-center my-15">
+            <img src="img/degerlendirmelerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Değerlendirmelerim
+            </span>
+        </a>
+
+        <a title="Satıcı Mesajlarım" href="/account-messages-page.html" class="flex items-center my-15">
+            <img src="img/satici-mesajlarim.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Satıcı Mesajlarım
+            </span>
+        </a>
+
+        <a title="Tekrar Satın Al" href="/account-buy-again-page.html" class="flex items-center my-15">
+            <img src="img/tekrar-satinal.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Tekrar Satın Al
+            </span>
+        </a>
+
+        <a title="VIP Card" href="/account-vip-card-page.html" class="flex items-center my-15">
+            <img src="img/wallet-mini.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                VIP Card
+            </span>
+        </a>
+
+        <a title="Takip Etdiğim Mağazalar" href="/account-followed-stores-page.html" class="flex items-center my-15">
+            <img src="img/takip-etdigim.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Takip Etdiğim Mağazalar
+            </span>
+        </a>
+
+        <a title="Önceden Gezdiklerim" href="/account-visited-before-page.html" class="flex items-center my-15">
+            <img src="img/onceden-gezdiklerim.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Önceden Gezdiklerim
+            </span>
+        </a>
+
+        <a title="İndirim kuponlarım" href="/account-discount-coupons-page.html" class="flex items-center my-15">
+            <img src="img/indirim-kuponlarim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                İndirim kuponlarım
+            </span>
+        </a>
+
+        <a title="Kullanıcı Bilgilerim" href="/account-user-info-page.html" class="flex items-center my-15">
+            <img src="img/kullanici-bilgilerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Kullanıcı Bilgilerim
+            </span>
+        </a>
+
+        <a title="Adres Bilgilerim" href="/account-address-info-page.html" class="flex items-center my-15">
+            <img src="img/adres-bilgilerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Adres Bilgilerim
+            </span>
+        </a>
+
+        <a title="Kayıtlı Kartlarım" href="/account-saved-cards-page.html" class="flex items-center my-15">
+            <img src="img/kayitli-kredi-kartlarim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Kayıtlı Kartlarım
+            </span>
+        </a>
+
+        <a title="VIP" href="#" class="flex items-center my-15">
+            <img src="img/crown.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                VIP
+            </span>
+        </a>
+
+        <a title="Duyuru Tercihlerim" href="/account-notification-choises-page.html" class="flex items-center my-15">
+            <img src="img/bell.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Duyuru Tercihlerim
+            </span>
+        </a>
+
+        <a title="Yardım" href="/account-help-page.html" class="flex items-center my-15">
+            <img src="img/yardim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Yardım
+            </span>
+        </a>
+
+    </div>
+</div>
+
+        <div class='col-span-9'>
+            <div>
+                <div class="grid grid-cols-12 gap-5 mb-22">
+                    <ul class="col-span-8 flex list-none flex-wrap flex-row" role="tablist">
+                        <li class="mr-20"> <!--active tab-->
+                            <button class="border-vivid-cerise text-vivid-cerise text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                Tümü
+                            </button>
+                        </li>
+
+                        <li class="mr-20">
+                            <button class="border-black border-opacity-20 text-black text-opacity-30 text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                Devam eden
+                            </button>
+                        </li>
+
+                        <li class="mr-20">
+                            <button class="border-black border-opacity-20 text-black text-opacity-30 text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                İadeler
+                            </button>
+                        </li>
+
+                        <li class="mr-20">
+                            <button class="border-black border-opacity-20 text-black text-opacity-30 text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                İptaller
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="col-span-4 border border-solid border-black border-opacity-20 rounded-8 h-40 px-13">
+                        <form class="flex items-center h-full justify-between">
+                            <label class="relative flex items-center h-full w-full">
+                                <span class="sr-only">Search</span>
+                            
+                                <input
+                                    class="w-full bg-transparent outline-none focus:outline-none placeholder:text-14 placeholder:leading-4 placeholder:text-black placeholder:text-opacity-30 text-14 font-semibold leading-4 text-black"
+                                    placeholder="Ürün ismi veya Marka ara"
+                                    type="text"
+                                    name="search"
+                                    value=""
+                                />
+              
+                                <button type='submit' class="flex items-center">
+                                    <img
+                                        width="20px"
+                                        height="20px"
+                                        src="img/search.svg"
+                                        alt="search"
+                                    />
+                                </button>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="rounded-8 bg-white shadow-black-shadow-2sm mb-28">
+    <div class="grid grid-cols-12 gap-5 items-center px-20 pt-4 pb-18">
+        <div class="col-span-10 grid grid-cols-4 gap-5">
+            <div>
+                <h6 class="font-semibold text-14 leading-10 text-black">
+                    Sipariş No: 
+                    <span class="font-normal ml-4">
+                        #S251970799
+                    </span>
+                </h6>
+
+                <p class="text-13 leading-5 text-black text-opacity-80">
+                    7 Ağustos - 21:13
+                </p>
+            </div>
+
+            <div>
+                <h6 class="font-semibold text-14 leading-10 text-black">
+                    Alıcı:
+                </h6>
+
+                <p class="text-13 leading-5 text-black text-opacity-80">
+                    Emrah Karaduman
+                </p>
+            </div>
+
+            <div>
+                <h6 class="font-semibold text-14 leading-10 text-black">
+                    Sipariş Özeti:
+                </h6>
+
+                <p class="text-13 leading-5 text-black text-opacity-80">
+                    6 Teslimat, 12 Ürün
+                </p>
+            </div>
+
+            <div>
+                <h6 class="font-semibold text-14 leading-10 text-black">
+                    Toplam:
+                </h6>
+
+                <p class="text-13 leading-5 text-vivid-cerise font-semibold">
+                   1000 TL
+                </p>
+            </div>
+        </div>
+
+        <div class="col-span-2 text-right mt-13">
+            <button class="bg-vivid-cerise text-white font-semibold text-14 leading-5 rounded-8 shadow-rossoCorsa-shadow-sm h-40 min-w-120">
+                <a href="account-order-detail-page.html" title="Sipariş Detayı">
+                    Sipariş Detayı
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <div class='py-22 px-20 border-t border-solid border-t-bright-gray3'>
+        <div class="w-95per">
+    <ol class="list-none flex">
+        <li class='border-b-platinum2 w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class="text-black absolute -bottom-8">
+                Siparişiniz hazırlanıyor
+            </span>
+
+            <div class="w-18 h-18 rounded-half border border-solid border-vivid-cerise bg-white absolute top-half left-0 -translate-y-1/2 flex items-center justify-center">
+                <span class="w-10 h-10 rounded-half bg-vivid-cerise"></span>
+            </div>
+        </li>
+        
+        <li class='border-b-platinum2 w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-american-silver absolute -bottom-8 -indent-12'>
+                Tedarik aşamasında
+            </span>
+
+            <span class='bg-platinum2 w-10 h-10 rounded-half absolute top-half left-0 -translate-y-1/2'></span>
+        </li>
+
+        <li class='border-b-platinum2 w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-american-silver absolute -bottom-8 -indent-8'>
+                Kargoya verildi
+            </span>
+            
+            <span class='bg-platinum2 w-10 h-10 rounded-half absolute top-half left-0 -translate-y-1/2'></span>
+        </li>
+
+        <li class='text-american-silver relative text-12 leading-4 font-semibold'>
+            <span class='right-0 absolute -bottom-8 w-maxContent'>
+                Teslim edildi
+            </span>
+            
+            <span class="w-10 h-10 rounded-half bg-platinum2 absolute top-half right-0 -translate-y-1/2"></span>
+        </li>
+    </ol>
+</div>
+        
+        <div class='mt-60 grid grid-cols-12 gap-5 items-center'>
+            <div class='col-span-6'>
+                <p class='text-12 leading-4 font-semibold text-black'>
+                    <span class='text-vivid-cerise font-bold block mb-12'>
+                        Siparişiniz hazırlanıyor
+                    </span>
+
+                    2 ürün 8 Ağustos tarihinde kargoya verilmiştir.
+                </p>
+            </div>
+            
+            <div class='col-span-6 grid grid-cols-12 items-center'>
+                <div class="col-span-9 flex flex-wrap">
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class='py-22 px-20 border-t border-solid border-t-bright-gray3'>
+        <div class="w-95per">
+    <ol class="list-none flex">
+        <li class='border-b-vivid-cerise w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class="text-black absolute -bottom-8">
+                Siparişiniz hazırlanıyor
+            </span>
+
+            <span class="w-10 h-10 rounded-half bg-vivid-cerise absolute top-half left-0 -translate-y-1/2"></span>
+        </li>
+        
+        <li class='border-b-platinum2 w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-black absolute -bottom-8 -indent-12'>
+                Tedarik aşamasında
+            </span>
+
+            <div class="w-18 h-18 rounded-half border border-solid border-vivid-cerise bg-white absolute top-half left-0 -translate-y-1/2 flex items-center justify-center">
+                <span class="w-10 h-10 rounded-half bg-vivid-cerise"></span>
+            </div>
+        </li>
+
+        <li class='border-b-platinum2 w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-american-silver absolute -bottom-8 -indent-8'>
+                Kargoya verildi
+            </span>
+            
+            <span class='bg-platinum2 w-10 h-10 rounded-half absolute top-half left-0 -translate-y-1/2'></span>
+        </li>
+
+        <li class='text-american-silver relative text-12 leading-4 font-semibold'>
+            <span class='right-0 absolute -bottom-8 w-maxContent'>
+                Teslim edildi
+            </span>
+            
+            <span class="w-10 h-10 rounded-half bg-platinum2 absolute top-half right-0 -translate-y-1/2"></span>
+        </li>
+    </ol>
+</div>
+
+        <div class='mt-60 grid grid-cols-12 gap-5 items-center'>
+            <div class='col-span-6'>
+                <p class='text-12 leading-4 font-semibold text-black'>
+                    <span class='text-vivid-cerise font-bold block mb-12'>
+                        Tedarik aşamasında
+                    </span>
+
+                    1 ürün 8 Ağustos tarihinde kargoya verilmiştir.
+                </p>
+            </div>
+            
+            <div class='col-span-6 grid grid-cols-12 items-center'>
+                <div class="col-span-9 flex flex-wrap">
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class='py-22 px-20 border-t border-solid border-t-bright-gray3'>
+        <div class="w-95per">
+    <ol class="list-none flex">
+        <li class='border-b-vivid-cerise w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class="text-black absolute -bottom-8">
+                Siparişiniz hazırlanıyor
+            </span>
+
+            <span class="w-10 h-10 rounded-half bg-vivid-cerise absolute top-half left-0 -translate-y-1/2"></span>  
+        </li>
+        
+        <li class='border-b-vivid-cerise w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-black absolute -bottom-8 -indent-12'>
+                Tedarik aşamasında
+            </span>
+
+            <span class='bg-vivid-cerise w-10 h-10 rounded-half absolute top-half left-0 -translate-y-1/2'></span>
+        </li>
+
+        <li class='border-b-platinum2 w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-american-silver absolute -bottom-8 -indent-8'>
+                Kargoya verildi
+            </span>
+            
+            <div class="w-18 h-18 rounded-half border border-solid border-vivid-cerise bg-white absolute top-half left-0 -translate-y-1/2 flex items-center justify-center">
+                <span class="w-10 h-10 rounded-half bg-vivid-cerise"></span>
+            </div>
+        </li>
+
+        <li class='text-american-silver relative text-12 leading-4 font-semibold'>
+            <span class='right-0 absolute -bottom-8 w-maxContent'>
+                Teslim edildi
+            </span>
+            
+            <span class="w-10 h-10 rounded-half bg-platinum2 absolute top-half right-0 -translate-y-1/2"></span>
+        </li>
+    </ol>
+</div>
+
+        <div class='mt-60 grid grid-cols-12 gap-5 items-center'>
+            <div class='col-span-6'>
+                <p class='text-12 leading-4 font-semibold text-black'>
+                    <span class='text-vivid-cerise font-bold block mb-12'>
+                        Kargoya verildi
+                    </span>
+
+                    4 ürün 8 Ağustos tarihinde kargoya verilmiştir.
+                </p>
+            </div>
+            
+            <div class='col-span-6 grid grid-cols-12 items-center'>
+                <div class="col-span-9 flex flex-wrap">
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class='py-22 px-20 border-t border-solid border-t-bright-gray3'>
+        <div class="w-95per">
+    <ol class="list-none flex">
+        <li class='border-b-vivid-cerise w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class="text-black absolute -bottom-8">
+                Siparişiniz hazırlanıyor
+            </span>
+
+            <span class="w-10 h-10 rounded-half bg-vivid-cerise absolute top-half left-0 -translate-y-1/2"></span>  
+        </li>
+        
+        <li class='border-b-vivid-cerise w-1/3 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-black absolute -bottom-8 -indent-12'>
+                Tedarik aşamasında
+            </span>
+
+            <span class='bg-vivid-cerise w-10 h-10 rounded-half absolute top-half left-0 -translate-y-1/2'></span>
+        </li>
+
+        <li class='border-b-vivid-cerise w-calc18 relative text-12 leading-4 font-semibold border-b-2 border-solid'>
+            <span class='text-black absolute -bottom-8 -indent-8'>
+                Kargoya verildi
+            </span>
+
+            <span class='bg-vivid-cerise w-10 h-10 rounded-half absolute top-half left-0 -translate-y-1/2'></span>  
+        </li>
+
+        <li class='text-black relative text-12 leading-4 font-semibold'>
+            <span class='-right-4 absolute -bottom-8 w-maxContent'>
+                Teslim edildi
+            </span>
+            
+            <div class="w-18 h-18 rounded-half border border-solid border-vivid-cerise bg-white absolute top-half left-0 -translate-y-1/2 flex items-center justify-center">
+                <span class="w-10 h-10 rounded-half bg-vivid-cerise"></span>
+            </div>
+        </li>
+    </ol>
+</div>
+        
+        <div class='mt-60 grid grid-cols-12 gap-5 items-center'>
+            <div class='col-span-6'>
+                <p class='text-12 leading-4 font-semibold text-black'>
+                    <span class='text-vivid-cerise font-bold block mb-12'>
+                       Teslim edildi
+                    </span>
+
+                    3 ürün 8 Ağustos tarihinde teslim edilmiştir.
+                </p>
+            </div>
+            
+            <div class='col-span-6 grid grid-cols-12 items-center'>
+                <div class="col-span-9 flex flex-wrap">
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class='py-22 px-20 border-t border-solid border-t-bright-gray3'>
+        <div class='grid grid-cols-12 gap-5 items-center'>
+            <div class='col-span-6'>
+                <p class='text-12 leading-4 font-semibold text-black'>
+                    <span class='text-vivid-cerise font-bold block mb-12'>
+                        İade edildi
+                    </span>
+
+                    1 ürün 8 Ağustos tarihinde iade edilmiştir.
+                </p>
+            </div>
+            
+            <div class='col-span-6 grid grid-cols-12 items-center'>
+                <div class="col-span-9 flex flex-wrap">
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='py-22 px-20 border-t border-solid border-t-bright-gray3'>
+        <div class='grid grid-cols-12 gap-5 items-center'>
+            <div class='col-span-6'>
+                <p class='text-12 leading-4 font-semibold text-black'>
+                    <span class='text-vivid-cerise font-bold block mb-12'>
+                        İptal edildi
+                    </span>
+
+                    1 ürün 8 Ağustos tarihinde iptal edilmiştir.
+                </p>
+            </div>
+            
+            <div class='col-span-6 grid grid-cols-12 items-center'>
+                <div class="col-span-9 flex flex-wrap">
+                    <figure class="rounded-4 border border-solid border-bright-gray1 h-75 w-50 flex items-center justify-center mr-15 mb-8">
+                        <img src="img/product.png" alt="product" width="50px" height="75px" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,218 @@
+<div class="flex justify-center fixed top-0 right-0 bottom-0 left-0 h-screen z-100">
+    <div class="bg-black w-full h-full opacity-60"></div>
+
+    <!--if institutional is not active then top-8 class will top-20-->
+    <div class='top-8 bg-white opacity-100 w-30per pt-25 pb-22 px-33 z-100 absolute self-center rounded-8 shadow-black-shadow-2md'>
+        <div>
+            <button class="absolute top-5 right-5 w-32 h-32 rounded-half bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-base text-white flex items-center justify-center">
+                <AiOutlineClose />
+            </button>
+
+            <div>
+                <h6 class="uppercase text-18 leading-6 font-semibold">SATIN AL</h6>
+                <p class="text-granite-gray text-base leading-5 mt-15 mb-16">Adres Değiştir</p>
+
+                <form class="grid grid-cols-2 gap-x-5 gap-y-6 items-center">
+
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                            Ad <span>*</span>
+                        </label>
+                        <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                        placeholder="Ad"
+                        type="text"
+                        value=""
+                        />
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                        Soyad<span>*</span>
+                        </label>
+                        <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                        placeholder="Soyad"
+                        type="text"
+                        value=""
+                        />
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                            Cep Telefonu <span>*</span>
+                        </label>
+                        <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                        placeholder="Cep Telefonu"
+                        type="text"
+                        value=""
+                        />
+                        <!-- <PhoneNumber phone={phone} setPhone={setPhone} /> -->
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                            Şəhər<span>*</span>
+                        </label>
+        
+                        <div class="border border-solid border-platinum rounded-6 bg-snow px-11">
+                            <select value="" 
+                            class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                <option value="0">Seçiniz</option>
+
+                                <option value="1">
+                                    Lorem
+                                </option>
+
+                                <option value="2">
+                                    Test
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                            Region<span>*</span>
+                        </label>
+                        <div class="border border-solid border-platinum rounded-6 bg-snow px-11">
+                            <select value="" 
+                            class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                <option value="0">Seçiniz</option>
+
+                                <option value="1">
+                                    Lorem
+                                </option>
+
+                                <option value="2">
+                                    Test
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                            Küçə<span>*</span>
+                        </label>
+                        <div class="border border-solid border-platinum rounded-6 bg-snow px-11">
+                            <select value=""
+                            class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                <option value="0">Seçiniz</option>
+
+                                <option value="1">
+                                    Lorem
+                                </option>
+
+                                <option value="2">
+                                    Test
+                                </option>
+                            </select>
+                        </div>
+                    </div> 
+
+                    <div class="flex flex-col col-span-2">
+                        <label class="text-12 leading-4 mb-10">
+                        Adres<span>*</span>
+                        </label>
+                        <textarea
+                        rows="5" placeholder='Mahalle, cadde, sokak ve diğer bilgilerinizi giriniz'
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black resize-none"
+                        value=""
+                        >
+                        </textarea>
+                    </div>
+
+                    <div class="flex flex-col col-span-2">
+                        <label class="text-12 leading-4 mb-10">
+                        Adres Başlığı<span>*</span>
+                        </label>
+                        <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                        placeholder="Örnek: Ev Adresim"
+                        type="text"
+                        value=""
+                        />
+                    </div>
+
+                    <!--if institutional is not active-->
+                    <!-- <button 
+                    class='text-vivid-cerise border-vivid-cerise border border-solid py-9 rounded-6 font-semibold text-base leading-5 text-center'>
+                        Bireysel
+                    </button>
+
+                    <button
+                    class='text-black border-gray2 border border-solid py-9 rounded-6 font-semibold text-base leading-5 text-center'>
+                        Kurumsal
+                    </button> -->
+                    <!--if institutional is not active-->
+
+                    <!--if institutional is active-->
+                    <button 
+                    class='text-black border-gray2 border border-solid py-9 rounded-6 font-semibold text-base leading-5 text-center'>
+                        Bireysel
+                    </button>
+
+                    <button
+                    class='text-vivid-cerise border-vivid-cerise border border-solid py-9 rounded-6 font-semibold text-base leading-5 text-center'>
+                        Kurumsal
+                    </button>
+                    <!--if institutional is active-->
+
+                    <!--if institutional is active-->
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                        VKN <span>*</span>
+                        </label>
+                        <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                        placeholder="VKN"
+                        type="text"
+                        value=""
+                        />
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                        Vergi Dairesi<span>*</span>
+                        </label>
+                        <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                        placeholder="Vergi Dairesi"
+                        type="text"
+                        value=""
+                        />
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="text-12 leading-4 mb-10">
+                        Firma Adı<span>*</span>
+                        </label>
+                        <input
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                        placeholder="Firma Adı"
+                        type="text"
+                        value=""
+                        />
+                    </div>
+
+                    <div class="flex flex-col mt-30">
+                        <label class="accept-checkbox flex items-center text-14 leading-4 text-black">
+                            <input class="hidden" type="checkbox" name="accept" value="" />
+
+                            <span class="block w-22 h-22 rounded-6 border-2 border-solid border-light-silver1 mr-12 bg-no-repeat bg-center cursor-pointer"></span>
+                            
+                            E-fatura mükellefiyim.
+                        </label>
+                    </div>
+                    <!--if institutional is active-->
+
+                    <button type="submit" class="col-span-2 bg-vivid-cerise py-9 rounded-6 font-semibold text-white text-base leading-5 text-center outline-none">
+                        Kaydet
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

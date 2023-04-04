@@ -1,0 +1,242 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                KULLANICI BİLGİLERİM
+            </h6>
+        </div>
+        
+        <div class="col-span-9 flex justify-end">
+            <p class="flex items-center text-13 leading-4 text-black">
+                <img src="img/icons/update.svg" alt="update" width="16px" height="16px" class="mr-9" />
+                Şifre Güncelleme
+            </p>    
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        @@include('../account-menu.html')
+
+        <div class='col-span-9'>
+            <div class='rounded-8 bg-white shadow-black-shadow-2sm pt-25 pb-60 px-30 grid grid-cols-2 gap-14'>
+                <div>
+                    <h6
+                    class="text-18 leading-6 text-black font-bold pl-9 relative mb-28 
+                    before:content[] before:absolute before:left-0 before:w-4 before:h-full before:rounded-2 before:bg-vivid-cerise"
+                    >
+                        Üyelik Bilgilerim
+                    </h6>
+
+                    <form>
+                        <div class="grid grid-cols-2 gap-x-5 gap-y-6">
+                            <div class="flex flex-col">
+                            
+                                <label class="text-12 leading-4 text-black mb-10">Ad*</label>
+                                <input
+                                class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                type="text"
+                                placeholder="Adınız"
+                                value="" 
+                                />
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="text-12 leading-4 text-black mb-10">Soyad*</label>
+                                <input
+                                class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                type="text"
+                                placeholder="Soyadınız"
+                                value=""
+                                />
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="text-12 leading-4 text-black mb-10">E-mail*</label>
+                                <input
+                                class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                type="e-mail"
+                                placeholder="Email Adresi"
+                                value=""
+                                />
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="text-12 leading-4 text-black mb-10">Cep Telefonu*</label>
+                                <input
+                                class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                                placeholder="Cep Telefonu"
+                                type="text"
+                                value=""
+                                />
+                                <!-- <PhoneNumber phone={phone} setPhone={setPhone} /> -->
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="text-12 leading-4 text-black mb-10">Doğum Tarihi*</label>
+
+                                <div class='grid grid-cols-3 gap-3'>
+                                    <div class="border border-solid border-platinum rounded-6 bg-snow px-8">
+                                        <select value="" 
+                                        class="w-full bg-transparent outline-none py-11 text-14 leading-4 text-black text-opacity-80">
+                                            <option value='0'>Gün</option>
+                                            <option value="">01</option>
+                                            <option value="">02</option>
+                                            <option value="">03</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="border border-solid border-platinum rounded-6 bg-snow px-8">
+                                        <select value="" 
+                                        class="w-full bg-transparent outline-none py-11 text-14 leading-4 text-black text-opacity-80">
+                                            <option value='0'>Ay</option>
+                                            <option value="">01</option>
+                                            <option value="">02</option>
+                                            <option value="">03</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="border border-solid border-platinum rounded-6 bg-snow px-8">
+                                        <select value=""
+                                        class="w-full bg-transparent outline-none py-11 text-14 leading-4 text-black text-opacity-80">
+                                            <option value='0'>Yıl</option>
+                                            <option value="">1999</option>
+                                            <option value="">1998</option>
+                                            <option value="">1997</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="text-12 leading-4 text-black mb-10">Cinsiyyet*</label>
+                                <div class='grid grid-cols-2 gap-3'>
+                                    <label class="gender-radio block">
+                                        <input class="hidden" type="radio" name="gender" 
+                                        value="" />
+
+                                        <div class="py-9 px-10 border border-solid border-platinum rounded-6 flex items-center justify-between cursor-pointer">
+                                            <img src="img/male.svg" alt="male" width="20px" height="20px" />
+                                            <span class="text-black text-14 leading-5">
+                                                ERKEK
+                                            </span>
+                                        </div>
+                                    </label>
+
+                                    <label class="gender-radio block">
+                                        <input class="hidden" type="radio" name="gender"
+                                        value="" />
+
+                                        <div class="py-9 px-10 border border-solid border-platinum rounded-6 flex items-center justify-between cursor-pointer">
+                                            <img src="img/female.svg" alt="female" width="20px" height="20px" />
+                                            <span class="text-black text-14 leading-5">
+                                                KADIN
+                                            </span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class='grid grid-cols-12 mt-24'>
+                            <div class='col-span-7'>
+                                <div class="flex flex-col">
+                                    <h6 class="text-12 leading-4 text-black mb-10">Kurumsal</h6>
+                                    <label class="accept-checkbox flex mb-17">
+                                        <input class="hidden" type="checkbox" name="accept" value="" />
+
+                                        <span class="block w-20 h-20 rounded-6 border-2 border-solid border-light-silver1 mr-9 bg-no-repeat bg-center cursor-pointer"></span>
+
+                                        <p class="text-black text-12 leading-4 w-calc24">
+                                            Kurumsal müşteri kampanyalarından/<br/>duyurularından haberdar olmak istiyorum.
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='grid grid-cols-12 gap-x-9 gap-y-6'>
+                            <div class='col-span-6'>
+                                <button type="submit" 
+                                class="rounded-6 bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-white text-14 leading-5 font-semibold py-11 w-full">
+                                    Güncelle
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class='relative after:absolute after:-left-7 after:bottom-0 after:w-1 after:h-86per after:bg-bright-gray3'>
+                    <h6
+                    class="text-18 leading-6 text-black font-bold pl-9 relative mb-28 
+                    before:content[] before:absolute before:left-0 before:w-4 before:h-full before:rounded-2 before:bg-vivid-cerise"
+                    >
+                        Şifre Güncelleme
+                    </h6>
+
+                    <form>
+                        <div class="grid grid-cols-2 gap-x-9 gap-y-6">
+                            <div class='col-span-2'>
+                                <div class="flex flex-col">
+                                    <label class="text-12 leading-4 text-black mb-10">Şu Anki Şifre</label>
+                                    <input
+                                    class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                    type="password"
+                                    value=""
+                                    placeholder="Şu Anki Şifre"
+                                    />
+                                </div>
+                            </div>
+            
+                            <div class='col-span-2'>
+                                <div class="flex flex-col">
+                                    <label class="text-12 leading-4 text-black mb-10">Yeni Şifre</label>
+                                    <input
+                                    class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                    type="password"
+                                    value=""
+                                    placeholder="Yeni Şifre"
+                                    />
+                                </div>
+                            </div>
+            
+                            <div class='col-span-2'>
+                                <div class="flex flex-col">
+                                    <label class="text-12 leading-4 text-black mb-10">Yeni Şifre (Tekrar)</label>
+                                    <input
+                                    class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                    type="password"
+                                    value=""
+                                    placeholder="Yeni Şifre (Tekrar)"
+                                    />
+                                </div>
+                            </div>
+            
+                            <button type="submit" class="rounded-6 bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-white text-14 leading-5 font-semibold py-11 w-full cursor-pointer outline-none"  >Güncelle</button>
+                        </div>
+                    </form>
+
+                    <form class='mt-24'>
+                        <div class='flex items-center justify-between'>
+                            <h6
+                            class="text-18 leading-6 text-black font-bold pl-9 relative 
+                            before:content[] before:absolute before:left-0 before:w-4 before:h-full before:rounded-2 before:bg-vivid-cerise"
+                            >
+                                İKİ ADIMLI DOĞRULAMA
+                            </h6>
+            
+                            <label class='switch'>
+                                <input type="checkbox" class="hidden" value="" />
+                                <span class="relative block rounded-100 cursor-pointer bg-platinum w-35 h-12
+                                before:content[] before:absolute before:w-18 before:h-18 before:left-0 before:top-1/2 before:-translate-y-1/2 before:shadow-rossoCorsa-shadow-md before:rounded-half before:bg-vivid-cerise"></span>
+                            </label>          
+                        </div>
+            
+                        <p class='mt-20 text-12 leading-4'>
+                            İki adımlı doğrulama yöntemini etkinleştirdiğinizde, kişisel şifrelerinize ek olarak kayıtlı cep telefonunuza gelen doğrulama koduyla oturum açarsınız.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

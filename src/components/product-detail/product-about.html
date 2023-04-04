@@ -1,0 +1,56 @@
+<div class="mt-30">
+    <div class="flex flex-row bg-bright-gray4">
+      <button disabled 
+      class="text-14 leading-4 text-gray font-semibold uppercase border-l border-solid border-l-gainsboro1 disabled:bg-white disabled:text-black disabled:border-l-transparent">
+        <a href="#" title="YORUMLAR" class="block py-17 px-56 pointer-events-none"> 
+            YORUMLAR
+        </a>
+      </button> <!--active button should be disabled and link should be pointer events none-->
+
+      <button class="text-14 leading-4 text-gray font-semibold uppercase border-l border-solid border-l-gainsboro1 disabled:bg-white disabled:text-black disabled:border-l-transparent">
+        <a href="#" title="ÖZELLİKLERİ" class="block py-17 px-56">
+            ÖZELLİKLERİ
+        </a>
+      </button>
+
+      <button class="text-14 leading-4 text-gray font-semibold uppercase border-l border-solid border-l-gainsboro1 disabled:bg-white disabled:text-black disabled:border-l-transparent">
+        <a href="#" title="ÜRÜN SORULARI" class="block py-17 px-56">
+            ÜRÜN SORULARI
+        </a>
+      </button>
+
+      <button class="text-14 leading-4 text-gray font-semibold uppercase border-l border-solid border-l-gainsboro1 disabled:bg-white disabled:text-black disabled:border-l-transparent">
+        <a href="#" title="İADE KOŞULLARI" class="block py-17 px-56">
+            İADE KOŞULLARI
+        </a>
+      </button>
+
+      <button class="text-14 leading-4 text-gray font-semibold uppercase border-l border-solid border-l-gainsboro1 disabled:bg-white disabled:text-black disabled:border-l-transparent">
+        <a href="#" title="TESLİMAT" class="block py-17 px-56">
+            TESLİMAT
+        </a>
+      </button>
+    </div>
+
+    <div class="bg-white">
+      <!--if comments is active-->
+      @@include('./product-comments.html')
+      <!--if comments is active-->
+
+      <!--if features is active-->
+      <!-- @@include('./product-features.html') -->
+      <!--if features is active-->
+
+      <!--if questions is active-->
+      <!-- @@include('./product-questions.html') -->
+      <!--if questions is active-->
+
+      <!--if return-terms is active-->
+      <!-- @@include('./product-return-terms.html') -->
+      <!--if return-terms is active-->
+
+      <!--if delivery is active-->
+      <!-- @@include('./product-delivery.html') -->
+      <!--if delivery is active-->
+    </div>
+</div>

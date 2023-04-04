@@ -1,0 +1,51 @@
+<div class="container mx-auto max-w-full flex flex-col pb-40">
+    <div>
+        <div class='shadow-black-shadow-xs rounded-4 bg-white py-27 px-32'>
+            <div class='flex flex-row justify-between'>
+                <div class='flex flex-row items-center'>
+                    <figure class='mr-36'>
+                        <Image src="img/store.svg" alt="store" width="106px" height="106px" />
+                    </figure>
+
+                    <div class='flex items-center'>
+                        <span class="bg-american-green rounded-6 text-white px-6 text-base leading-5 font-semibold mr-15 inline-flex items-center justify-center">
+                            4.5
+                        </span>
+                        <h5 class='text-18 leading-6 font-semibold text-black'>
+                            Hesaplımagaza
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+       
+                    <a href="/" title='Ürüne geri dön'
+                    class='text-center rounded-6 border border-solid border-vivid-cerise text-vivid-cerise text-14 leading-5 font-semibold py-11 min-w-183'>
+                        Ürüne geri dön
+                    </a>
+
+                    <button 
+                    class='rounded-6 bg-vivid-cerise text-white text-14 leading-5 font-semibold py-11 min-w-183 ml-18'>
+                        Satıcıya soru sor
+                    </button>
+                </div>    
+            </div>
+        </div>
+
+        <div class='mt-30 shadow-black-shadow-2sm bg-white rounded-4'>
+            <div class='px-22 pt-20 pb-75'>
+                @@include('./product-question-card.html')
+                @@include('./product-question-card.html')
+                @@include('./product-question-card.html')
+                @@include('./product-question-card.html')
+            </div>                     
+        </div>
+    </div>
+
+    @@include('../utils/pagination.html')
+</div>
+
+<!--ask question modal-->
+<!-- @@include('../modals/ask-question-modal.html') -->
+<!--ask question modal-->
+

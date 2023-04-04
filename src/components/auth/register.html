@@ -40,7 +40,7 @@
                     />
                 </label>
 
-                <label class="block sm:mb-28 xs:mb-28 xxs:mb-28 mb-23">
+                <label class="block sm:mb-28 xs:mb-28 xxs:mb-28 mb-23 visible sm:hidden xs:hidden xxs:hidden">
                     <span class="block text-14 leading-5 text-black text-opacity-80 mb-10">
                         Tekrar Şifre
                     </span>
@@ -128,7 +128,7 @@
                     ve ya
                 </span>
 
-                <div class="grid grid-cols-2 sm:gap-2 xs:gap-2 xxs:gap-2 gap-7 mb-22">
+                <div class="grid grid-cols-2 sm:gap-2 xs:gap-2 xxs:gap-2 gap-7 mb-22 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1">
                     <button
                         class="rounded-6 bg-blue-yonder shadow-black-shadow-4md h-40 sm:pl-18 xs:pl-18 xxs:pl-18 pl-23 flex items-center">
                         <img
@@ -180,7 +180,7 @@
             </div>
         </div>
 
-        <div class='pl-7 w-full h-250 hidden sm:block xs:block xxs:block'>
+        <div class='pl-7 w-full h-250 hidden sm:block xs:block xxs:block visible sm:invisible xs:invisible xxs:invisible'>
             <img src="img/register.svg" alt='register' width="297px" height="250px" class='w-full h-full object-contain'/>
         </div>
     </div>
@@ -189,3 +189,5 @@
 <!--if clicked "Üyelik", then open this modal-->
 <!-- @@include('../modals/membership-conditions-modal.html') -->
 <!--if clicked "Üyelik", then open this modal-->
+
+@@include('../modals/buy-modal.html')

@@ -1,0 +1,498 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                Satıcı Mesajlarım
+            </h6>
+        </div>
+        
+        <div class="col-span-9 flex justify-end relative">
+            <button>
+                <div class="flex flex-row items-center">
+                <span class="text-13 leading-4 text-black">Ürün Sorularım</span>
+                <FaAngleDown class="text-davys-grey text-opacity-50 ml-9" />
+                </div>
+            </button>
+
+            <!--if show dropdown-->
+            <!-- <div class="block absolute top-full -right-8 mt-22 z-10 rounded-6 px-23 pt-23 pb-29 bg-white shadow-dropdown-shadow w-maxContent
+            before:content[] before:absolute before:-top-2 before:right-7 before:w-16 before:h-16 before:black-shadow-sm before:bg-white before:z-10 before:rotate-45 before:rounded-1" 
+            >
+                <ul class='text-13 leading-4'>
+                    <li class='text-vivid-cerise mb-13 last:mb-0 cursor-pointer'> <!--if active item-->
+                        <!-- Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+                </ul>
+            </div> -->
+            <!--if show dropdown-->
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        <div class="col-span-3">
+    <div class="rounded-6 py-5 px-24 bg-white leading-10">
+
+        <a title="Siparişlerim" href="/account-orders-page.html" class="flex items-center my-15"> <!--active item-->
+            <img src="img/siparislerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-vivid-cerise text-base font-semibold ml-20'>
+                Siparişlerim
+            </span>
+        </a>
+
+        <a title="Değerlendirmelerim" href="/account-assessments-page.html" class="flex items-center my-15">
+            <img src="img/degerlendirmelerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Değerlendirmelerim
+            </span>
+        </a>
+
+        <a title="Satıcı Mesajlarım" href="/account-messages-page.html" class="flex items-center my-15">
+            <img src="img/satici-mesajlarim.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Satıcı Mesajlarım
+            </span>
+        </a>
+
+        <a title="Tekrar Satın Al" href="/account-buy-again-page.html" class="flex items-center my-15">
+            <img src="img/tekrar-satinal.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Tekrar Satın Al
+            </span>
+        </a>
+
+        <a title="VIP Card" href="/account-vip-card-page.html" class="flex items-center my-15">
+            <img src="img/wallet-mini.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                VIP Card
+            </span>
+        </a>
+
+        <a title="Takip Etdiğim Mağazalar" href="/account-followed-stores-page.html" class="flex items-center my-15">
+            <img src="img/takip-etdigim.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Takip Etdiğim Mağazalar
+            </span>
+        </a>
+
+        <a title="Önceden Gezdiklerim" href="/account-visited-before-page.html" class="flex items-center my-15">
+            <img src="img/onceden-gezdiklerim.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Önceden Gezdiklerim
+            </span>
+        </a>
+
+        <a title="İndirim kuponlarım" href="/account-discount-coupons-page.html" class="flex items-center my-15">
+            <img src="img/indirim-kuponlarim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                İndirim kuponlarım
+            </span>
+        </a>
+
+        <a title="Kullanıcı Bilgilerim" href="/account-user-info-page.html" class="flex items-center my-15">
+            <img src="img/kullanici-bilgilerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Kullanıcı Bilgilerim
+            </span>
+        </a>
+
+        <a title="Adres Bilgilerim" href="/account-address-info-page.html" class="flex items-center my-15">
+            <img src="img/adres-bilgilerim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Adres Bilgilerim
+            </span>
+        </a>
+
+        <a title="Kayıtlı Kartlarım" href="/account-saved-cards-page.html" class="flex items-center my-15">
+            <img src="img/kayitli-kredi-kartlarim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Kayıtlı Kartlarım
+            </span>
+        </a>
+
+        <a title="VIP" href="#" class="flex items-center my-15">
+            <img src="img/crown.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                VIP
+            </span>
+        </a>
+
+        <a title="Duyuru Tercihlerim" href="/account-notification-choises-page.html" class="flex items-center my-15">
+            <img src="img/bell.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Duyuru Tercihlerim
+            </span>
+        </a>
+
+        <a title="Yardım" href="/account-help-page.html" class="flex items-center my-15">
+            <img src="img/yardim-icon.svg" width="24px" height="24px" alt="menu icon" />
+            <span class='text-dark-charcoal text-base font-semibold ml-20'>
+                Yardım
+            </span>
+        </a>
+
+    </div>
+</div>
+
+        <div class='col-span-9'>
+            <div class="rounded-8 bg-white shadow-black-shadow-2sm px-22 pt-19 pb-24 grid grid-cols-2 gap-7">
+                <div class='border border-solid border-bright-gray3 rounded-8 pl-8 pr-14 py-14'>
+                    <ul class="flex list-none flex-col pr-11 max-h-386 overflow-y-auto" role="tablist">
+                        <li class='bg-magnolia text-vivid-cerise mb-10 last:mb-0 rounded-8 py-5 px-10 cursor-pointer flex'><!--active item-->
+                            <!--if message is unread-->
+                            <span class='bg-vivid-cerise w-8 h-8 rounded-half mr-10 mt-6'></span>
+                            <!--if message is unread-->
+
+                            <!--if message is read-->
+                            <!-- <span class='bg-silver-foil w-8 h-8 rounded-half mr-10 mt-6'></span> -->
+                            <!--if message is read-->
+
+                            <div class='w-calc18full'>
+                                <div class='flex items-center justify-between'>
+                                    <p class='text-vivid-cerise text-14 leading-5 font-semibold tracking-sl flex items-center'>
+                                        Yeni Sezon Old Skool 
+                                    </p>
+
+                                    <span class='text-12 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                        30 Ağustos 2022 
+                                    </span>
+                                </div>
+
+                                <p class='text-13 leading-4 tracking-sl text-onyx1 my-5'>
+                                    BloomS İSTANBUL 
+                                </p>
+
+                                <div class='flex items-end justify-between'>
+                                    <p class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 line-clamp-1 pr-16'>
+                                        Satıcı: Merhaba. Kaydırmaz taban efendim
+                                    </p>
+
+                                    <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise'>
+                                        CEVAPLANDI 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class='bg-white text-vivid-cerise mb-10 last:mb-0 rounded-8 py-5 px-10 cursor-pointer flex'>
+                            <!--if message is unread-->
+                            <span class='bg-vivid-cerise w-8 h-8 rounded-half mr-10 mt-6'></span>
+                            <!--if message is unread-->
+
+                            <!--if message is read-->
+                            <!-- <span class='bg-silver-foil w-8 h-8 rounded-half mr-10 mt-6'></span> -->
+                            <!--if message is read-->
+
+                            <div class='w-calc18full'>
+                                <div class='flex items-center justify-between'>
+                                    <p class='text-onyx1 text-14 leading-5 font-semibold tracking-sl flex items-center'>
+                                        Yeni Sezon Old Skool 
+                                    </p>
+
+                                    <span class='text-12 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                        30 Ağustos 2022 
+                                    </span>
+                                </div>
+
+                                <p class='text-13 leading-4 tracking-sl text-onyx1 my-5'>
+                                    BloomS İSTANBUL 
+                                </p>
+
+                                <div class='flex items-end justify-between'>
+                                    <p class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 line-clamp-1 pr-16'>
+                                        Satıcı: Merhaba. Kaydırmaz taban efendim
+                                    </p>
+
+                                    <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise'>
+                                        CEVAPLANDI 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class='bg-white text-vivid-cerise mb-10 last:mb-0 rounded-8 py-5 px-10 cursor-pointer flex'>
+                            <!--if message is unread-->
+                            <!-- <span class='bg-vivid-cerise w-8 h-8 rounded-half mr-10 mt-6'></span> -->
+                            <!--if message is unread-->
+
+                            <!--if message is read-->
+                            <span class='bg-silver-foil w-8 h-8 rounded-half mr-10 mt-6'></span>
+                            <!--if message is read-->
+
+                            <div class='w-calc18full'>
+                                <div class='flex items-center justify-between'>
+                                    <p class='text-onyx1 text-14 leading-5 font-semibold tracking-sl flex items-center'>
+                                        Yeni Sezon Old Skool 
+                                    </p>
+
+                                    <span class='text-12 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                        30 Ağustos 2022 
+                                    </span>
+                                </div>
+
+                                <p class='text-13 leading-4 tracking-sl text-onyx1 my-5'>
+                                    BloomS İSTANBUL 
+                                </p>
+
+                                <div class='flex items-end justify-between'>
+                                    <p class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 line-clamp-1 pr-16'>
+                                        Satıcı: Merhaba. Kaydırmaz taban efendim
+                                    </p>
+
+                                    <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise'>
+                                        CEVAPLANDI 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class='bg-white text-vivid-cerise mb-10 last:mb-0 rounded-8 py-5 px-10 cursor-pointer flex'>
+                            <!--if message is unread-->
+                            <!-- <span class='bg-vivid-cerise w-8 h-8 rounded-half mr-10 mt-6'></span> -->
+                            <!--if message is unread-->
+
+                            <!--if message is read-->
+                            <span class='bg-silver-foil w-8 h-8 rounded-half mr-10 mt-6'></span>
+                            <!--if message is read-->
+
+                            <div class='w-calc18full'>
+                                <div class='flex items-center justify-between'>
+                                    <p class='text-onyx1 text-14 leading-5 font-semibold tracking-sl flex items-center'>
+                                        Yeni Sezon Old Skool 
+                                    </p>
+
+                                    <span class='text-12 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                        30 Ağustos 2022 
+                                    </span>
+                                </div>
+
+                                <p class='text-13 leading-4 tracking-sl text-onyx1 my-5'>
+                                    BloomS İSTANBUL 
+                                </p>
+
+                                <div class='flex items-end justify-between'>
+                                    <p class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 line-clamp-1 pr-16'>
+                                        Satıcı: Merhaba. Kaydırmaz taban efendim
+                                    </p>
+
+                                    <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise'>
+                                        CEVAPLANDI 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class='bg-white text-vivid-cerise mb-10 last:mb-0 rounded-8 py-5 px-10 cursor-pointer flex'>
+                            <!--if message is unread-->
+                            <span class='bg-vivid-cerise w-8 h-8 rounded-half mr-10 mt-6'></span>
+                            <!--if message is unread-->
+
+                            <!--if message is read-->
+                            <!-- <span class='bg-silver-foil w-8 h-8 rounded-half mr-10 mt-6'></span> -->
+                            <!--if message is read-->
+
+                            <div class='w-calc18full'>
+                                <div class='flex items-center justify-between'>
+                                    <p class='text-onyx1 text-14 leading-5 font-semibold tracking-sl flex items-center'>
+                                        Yeni Sezon Old Skool 
+                                    </p>
+
+                                    <span class='text-12 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                        30 Ağustos 2022 
+                                    </span>
+                                </div>
+
+                                <p class='text-13 leading-4 tracking-sl text-onyx1 my-5'>
+                                    BloomS İSTANBUL 
+                                </p>
+
+                                <div class='flex items-end justify-between'>
+                                    <p class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 line-clamp-1 pr-16'>
+                                        Satıcı: Merhaba. Kaydırmaz taban efendim
+                                    </p>
+
+                                    <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise'>
+                                        CEVAPLANDI 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class='bg-white text-vivid-cerise mb-10 last:mb-0 rounded-8 py-5 px-10 cursor-pointer flex'>
+                            <!--if message is unread-->
+                            <!-- <span class='bg-vivid-cerise w-8 h-8 rounded-half mr-10 mt-6'></span> -->
+                            <!--if message is unread-->
+
+                            <!--if message is read-->
+                            <span class='bg-silver-foil w-8 h-8 rounded-half mr-10 mt-6'></span>
+                            <!--if message is read-->
+
+                            <div class='w-calc18full'>
+                                <div class='flex items-center justify-between'>
+                                    <p class='text-onyx1 text-14 leading-5 font-semibold tracking-sl flex items-center'>
+                                        Yeni Sezon Old Skool 
+                                    </p>
+
+                                    <span class='text-12 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                        30 Ağustos 2022 
+                                    </span>
+                                </div>
+
+                                <p class='text-13 leading-4 tracking-sl text-onyx1 my-5'>
+                                    BloomS İSTANBUL 
+                                </p>
+
+                                <div class='flex items-end justify-between'>
+                                    <p class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 line-clamp-1 pr-16'>
+                                        Satıcı: Merhaba. Kaydırmaz taban efendim
+                                    </p>
+
+                                    <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise'>
+                                        CEVAPLANDI 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        key={item.id}
+                        onClick={() => {handleSelect(item.id)}}
+                        >
+                            <span class={`${item.user_seen == 2 ? 'bg-vivid-cerise' : 'bg-transparent'} w-8 h-8 rounded-half mr-10 mt-6`}></span>
+
+                            <div class='w-calc18full'>
+                                <div class='flex items-center justify-between'>
+                                    <p class={`${currentTab === item.id ? 'text-vivid-cerise' : currentTab != undefined &&  currentTab !== item.id ? 'text-onyx1' : ''} text-14 leading-5 font-semibold tracking-sl flex items-center`}>
+                                        {/* <span class={`${item.user_seen == 2 && reload ? 'bg-vivid-cerise w-8 h-8 rounded-half mr-10' : !reload && selectedMessage == item.id ? '' : ''}`}></span> */}
+                                        {item.product_variant?.title}
+                                    </p>
+
+                                    <span class='text-12 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                        {item.created_at && item.created_at.slice(0, 10)}
+                                    </span>
+                                </div>
+
+                                <p class='text-13 leading-4 tracking-sl text-onyx1 my-5'>
+                                    {item.product_variant?.product?.store?.store_name}
+                                </p>
+
+                                <div class='flex items-end justify-between'>
+                                    <p class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 line-clamp-1 pr-16'>
+                                        {item.answer == '' ? (`Mən: ${item.content}`) : (`Satıcı: ${item.answer}`)}
+                                    </p>
+
+                                    <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise'>
+                                        {item.answer == '' ? ('CEVAPLANMADI') : ('CEVAPLANDI')}
+                                    </span>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul> 
+                </div>
+
+                <div class='border border-solid border-bright-gray3 rounded-8'>
+                    <div class='py-12'>
+                        <div class='pl-13 pr-26 pb-14 flex items-center justify-between'>
+                            <div>
+                                <h6 class='text-base leading-5 font-semibold tracking-sl text-onyx1 mb-3'>
+                                    BloomS İSTANBUL 
+                                </h6>
+    
+                                <p class='text-13 leading-4 text-onyx1 text-opacity-60 tracking-sl'>
+                                    Yeni Sezon Old Skool Ürünü Hakkında
+                                </p>
+                            </div>
+
+                            <!--if not clicked more button-->
+                            <button class="text-black relative text-22 flex items-center pb-5">
+                                ...
+                                <span class="hidden items-center absolute right-0 top-8 py-9 px-10 bg-white rounded-4 text-12 leading-4 text-black w-maxContent shadow-black-shadow-6md">
+                                <FaExclamationTriangle class="mr-10 text-rosso-corsa text-base" />
+                                Şikayet et
+                                </span>
+                            </button>
+                            <!--if not clicked more button-->
+
+                            <!--if clicked more button-->
+                            <!-- <button class="text-black relative text-22 flex items-center pb-5">
+                            ...
+                            <span class="flex items-center absolute right-0 top-8 py-9 px-10 bg-white rounded-4 text-12 leading-4 text-black w-maxContent shadow-black-shadow-6md">
+                                <FaExclamationTriangle class="mr-10 text-rosso-corsa text-base" />
+                                Şikayet et
+                            </span>
+                            </button> -->
+                            <!--if clicked more button-->
+                        </div>
+    
+                        <div class='bg-cultured3 border-y border-y-solid border-y-bright-gray3 h-309 pt-27 pb-14 pr-13'>
+                            <div class='h-full overflow-y-auto px-15'>
+                                <div class='flex justify-end'> 
+                                    <div class='w-half border border-solid border-lotion bg-vivid-cerise rounded-l-20 rounded-b-20 pt-7 pb-6 px-15 text-white flex flex-col mb-15'>
+                                        <p class='text-13 leading-4 font-semibold mb-2'>
+                                            Mehaba. Kaçuk taban kaydırıyormu?
+                                        </p>
+                                        <span class='text-10 leading-3 tracking-sl text-right'>
+                                            30 Ağustos 2022 00:25
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <div class='flex justify-start'> 
+                                    <div class='w-half border border-solid border-platinum bg-white rounded-r-20 rounded-b-20 pt-7 pb-6 px-15 flex flex-col mb-15'>
+                                        <p class='text-13 leading-4 text-black mb-2'>
+                                            Merhaba. Kaydırmaz taban efendim
+                                        </p>
+                                        <span class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60'>
+                                            30 Ağustos 2022 00:30
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class='pt-11 px-13 flex items-center justify-between'>
+    
+                            <div>
+                                <span class='text-10 leading-3 tracking-sl font-semibold text-vivid-cerise block'>
+                                    SORUNUZ CEVAPLANDI
+                                </span>
+                                <span class='text-10 leading-3 tracking-sl text-onyx1 text-opacity-60 block'>
+                                    5 dakika içinde cevaplandı.
+                                </span>
+                            </div>
+    
+                            <div class='flex items-center justify-between'>
+                                <a href="/question-list.html" title='Başka Soru Sor'
+                                class='rounded-4 border border-solid border-vivid-cerise text-12 leading-4 font-semibold text-vivid-cerise min-w-96 h-24 flex items-center justify-center text-center mr-10'>
+                                    Başka Soru Sor
+                                </a>
+    
+                                <a href="/product-detail.html" title='Ürüne git'
+                                class='rounded-4 bg-vivid-cerise text-12 leading-4 font-semibold text-white min-w-96 h-24 flex items-center justify-center text-center'>
+                                    Ürüne git
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

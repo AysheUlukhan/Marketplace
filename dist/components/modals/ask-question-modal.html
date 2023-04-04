@@ -1,0 +1,100 @@
+<div class="flex justify-center fixed top-0 right-0 bottom-0 left-0 h-screen z-100">
+    <div class="bg-black w-full h-full opacity-60"></div>
+
+    <div class="bg-white opacity-100 pb-44 px-44 pt-31 z-100 absolute top-20 self-center rounded-6 shadow-black-shadow-2md w-40per">
+      <div>
+        <button
+          class="absolute top-5 right-5 w-32 h-32 rounded-half bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-base text-white flex items-center justify-center"
+        >
+          <AiOutlineClose />
+        </button>
+
+        <div>
+          <h5 class="text-22 leading-7 font-bold text-black flex items-center mb-22">
+            <img
+              src="img/icons/question.svg"
+              alt="question"
+              width="27px"
+              height="24px"
+              class="mr-18"
+            />
+            Satıcıya sor
+          </h5>
+
+          <div>
+            <div class="flex items-center justify-between mb-21">
+              <div class="flex items-center">
+                <h5 class="text-22 leading-7 font-bold text-black mr-9">
+                    Koton
+                </h5>
+
+                <span class="bg-go-green rounded-100 text-white px-8 text-20 leading-5 font-semibold inline-flex items-center justify-center">
+                    9.5
+                </span>
+              </div>
+            </div>
+
+            <form>
+              <div class="flex flex-col mb-19">
+                <label class="text-base leading-5 font-semibold text-black mb-10">
+                  Sorunuz
+                </label>
+                <textarea
+                  rows="5"
+                  placeholder="Sorunuzu buraya yazın"
+                  value=""
+                  class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-base placeholder:leading-5 placeholder:text-gray2 text-base leading-5 text-black resize-none"
+                ></textarea>
+              </div>
+
+              <label class="accept-checkbox flex items-center text-14 leading-5 text-black mb-25">
+                <input class="hidden" type="checkbox" name="accept" value="" />
+
+                <span class="block w-24 h-24 rounded-8 border-2 border-solid border-light-silver1 mr-11 bg-no-repeat bg-center cursor-pointer"></span>
+
+                <p class="w-calc24">
+                  Sorularımda ad soyad bilgimin gözükmesine izin veriyorum.
+                  Aydınlatma Metni`ne ulaşmak için
+                  <span class="underline cursor-pointer">
+                    tıklayınız.
+                  </span>
+                </p>
+              </label>
+
+              <label class="accept-checkbox flex items-center text-14 leading-5 text-black mb-25">
+                <input class="hidden" type="checkbox" name="accept" value="" />
+
+                <span class="block w-24 h-24 rounded-8 border-2 border-solid border-light-silver1 mr-11 bg-no-repeat bg-center cursor-pointer"></span>
+
+                <p class="w-calc24">
+                  Soru sormak için
+                  <span class="underline cursor-pointer">
+                    Kullanıcı Sözleşmesi
+                  </span>
+                  `ni kabul ediyorum.
+                </p>
+              </label>
+
+              <!--if required fields are empty-->
+              <button type="submit" disabled
+              class="w-full rounded-12 disabled:bg-gainsboro4 bg-vivid-cerise disabled:shadow-black-shadow-4md shadow-rossoCorsa-shadow-sm uppercase disabled:text-sonic-silver2 text-white text-base leading-5 font-semibold tracking-wider py-15 disabled:cursor-default">
+                    SORUYU GÖNDER
+              </button>
+              <!--if required fields are empty-->
+
+              <!--if required fields are not empty-->
+              <!-- <button type="submit"
+              class="w-full rounded-12 disabled:bg-gainsboro4 bg-vivid-cerise disabled:shadow-black-shadow-4md shadow-rossoCorsa-shadow-sm uppercase disabled:text-sonic-silver2 text-white text-base leading-5 font-semibold tracking-wider py-15 disabled:cursor-default">
+                    SORUYU GÖNDER
+              </button> -->
+              <!--if required fields are not empty-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--if success then open this modal-->
+
+<!--if success then open this modal-->

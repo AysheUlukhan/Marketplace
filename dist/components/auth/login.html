@@ -42,11 +42,11 @@
                     />
                   </label>
 
-                  <div class="flex flex-row justify-between items-center text-14 leading-4 my-15 text-black">
-                    <label class="accept-checkbox flex items-center">
+                  <div class="flex flex-row justify-between items-center text-14 leading-4 my-15 text-black visible sm:hidden xs:hidden xxs:hidden">
+                    <label class="accept-checkbox flex items-center ">
                       <input
                         checked=""
-                        class="hidden"
+                        class="hidden "
                         type="checkbox"
                         name="accept"
                       />
@@ -59,7 +59,7 @@
 
                   <button
                     type="submit"
-                    class="bg-go-green rounded-6 text-white text-base leading-5 font-semibold py-10 w-full cursor-pointer focus:outline-none capitalize"
+                    class="bg-go-green sm:bg-vivid-cerise xs:bg-vivid-cerise xxs:bg-vivid-cerise rounded-6 text-white text-base leading-5 font-semibold py-10 sm:mt-14 xs:mt-14 xxs:mt-14  w-full cursor-pointer focus:outline-none capitalize"
                   >
                     giriş yapın
                   </button>
@@ -68,7 +68,7 @@
                     ve ya
                   </p>
 
-                  <div class="grid grid-cols-2 sm:gap-2 xs:gap-2 xxs:gap-2 gap-6">
+                  <div class="grid grid-cols-2 sm:gap-2 xs:gap-2 xxs:gap-2 gap-6 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 ">
                     <button class="rounded-6 bg-blue-yonder shadow-black-shadow-4md h-40 pl-16 flex items-center">
                       <img
                         src="img/facebook-login.svg"
@@ -79,7 +79,7 @@
 
                       <span class="block mx-14 bg-YInMn-blue w-1 h-26"></span>
 
-                      <span class="text-11 leading-3 text-white text-left">
+                      <span class="text-11 leading-3 text-white text-left ">
                         <span class="text-13 font-semibold block">
                           Facebook
                         </span>
@@ -107,17 +107,23 @@
                   </div>
                 </form>
 
-                <p class="text-center my-15 text-14 leading-4 text-black text-opacity-60">
+                <p class="text-center my-15 text-14 leading-4 text-black text-opacity-60 visible sm:hidden xs:hidden xxs:hidden">
                   hesabın yoksa
                 </p>
 
                 <a
                   href="/register.html"
                   title="Üye olun"
-                  class="block text-center rounded-6 bg-vivid-cerise text-white text-base leading-5 font-semibold py-10 w-full cursor-pointer outline-none"
+                  class="block text-center rounded-6 bg-vivid-cerise text-white text-base leading-5 font-semibold py-10 w-full cursor-pointer outline-none visible sm:hidden xs:hidden xxs:hidden"
                 >
                   Üye olun
                 </a>
+
+                <div class="flex flex-row justify-between items-center font-normal text-14 leading-4 my-15 text-black visible lg:hidden">
+                  <a href="/forgot-password.html" title="Şifreni Unuttun?">Şifreni Unuttun?</a>
+  
+                  <a href="/" title="Hesabın yoksa üye ol">Hesabın yoksa <span class="text-vivid-cerise underline">üye ol</span> </a>
+                </div>
               </div>
             </div>
           </div>

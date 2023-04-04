@@ -1,0 +1,98 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                Sİparİş DETAYI
+            </h6>
+        </div>
+        
+        <div class="col-span-9 flex justify-between">
+            <div class="flex items-center">
+                <p class="text-14 leading-4 text-black">
+                    Sipariş tarihi: 4 Aralık
+                </p>
+
+                <p class="text-14 leading-4 text-black mx-76">
+                    Sipariş No: S232281228
+                </p>
+
+                <div class="flex items-center text-14 leading-4 text-black" type="button">
+                    <img src="img/icons/file.svg" alt="file" width="16px" height="16px" class="mr-7">
+
+                    <span class="underline">
+                        Mesafeli satış sözleşmesi
+                    </span>
+                </div>
+            </div>
+
+            <div class="flex items-center text-14 leading-4 text-black" type="button">
+                <img src="img/icons/remove-black.svg" alt="file" width="16px" height="16px" class="mr-7">
+
+                Siparişini Sil
+            </div>
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        @@include('../account-menu.html')
+
+        <div class='col-span-9'>
+            <div>
+                @@include('./order-detail-box.html')
+            </div>
+
+            <div class='rounded-8 bg-white shadow-black-shadow-2sm py-22 px-24 mt-32'>
+                <div class='flex items-center justify-between pb-14 border-b border-solid border-b-bright-gray3'>
+                    <div>
+                        <h6 class='text-14 leading-5 text-black uppercase font-bold mb-14'>
+                            Teslİmat bİlgİlerİ
+                        </h6>
+                        <p class='text-14 leading-5 text-granite-gray'>
+                            Limak Ithalat Ihracat
+                        </p>
+                        <p class='text-12 leading-5 text-granite-gray'>
+                            Halkalı Merkez Mahellesi. Üzümlü SK. 5/7 0004713 Sefiye Xudakişiyeva İstanbul
+                        </p>
+                    </div>
+                    <button class='border border-solid border-quick-silver2 rounded-8 py-11 px-21 text-14 leading-5 text-granite-gray'>
+                        Sipariş Adresimi Güncelle
+                    </button>
+                </div>
+            
+                <div class='flex items-end justify-between pt-19'>
+                    <div>
+                        <h6 class='text-14 leading-5 text-black uppercase font-bold mb-14'>
+                            Teslİmat bİlgİlerİ
+                        </h6>
+            
+                        <div class='flex items-center'>
+                            <img src="img/mastercard.svg" alt="mastercard" width="32px" height="25px" class="mr-13" />
+                            <p class='text-14 leading-4 text-black font-semibold'>
+                                ****9593 - Tek Çekim
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class='flex items-center'>
+                        <p class='ml-40'>
+                            <span class='text-14 leading-5 text-granite-gray'>Ürün toplam:</span>
+                            <span class='text-16 leading-5 text-black font-bold ml-8'>53,90 TL</span>
+                        </p>
+                        <p class='ml-40'>
+                            <span class='text-14 leading-5 text-granite-gray'>Kargo tutan:</span>
+                            <span class='text-16 leading-5 text-black font-bold ml-8'>0,99 TL</span>
+                        </p>
+                        <p class='ml-40'>
+                            <span class='text-14 leading-5 text-granite-gray font-semibold'>Toplam:</span>
+                            <span class='text-16 leading-5 text-vivid-cerise font-bold ml-8'>54,89 TL</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--edit address modal-->
+<!-- @@include('../../modals/edit-address-modal.html') -->
+<!--edit address modal-->

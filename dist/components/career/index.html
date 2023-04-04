@@ -1,0 +1,73 @@
+<div class="container mx-auto max-w-full">
+    <div class="grid grid-cols-2 items-center bg-white pt-42 pb-84 mb-60 rounded-8 shadow-black-shadow-2sm pl-14per pr-7per">
+        <div>
+            <h2 class="text-24 leading-7 font-semibold text-vivid-cerise uppercase mb-30">
+                EKİBİMİZE KATIL
+            </h2>
+
+            <form class="grid grid-cols-2 gap-5">
+                <div class="flex flex-col">
+                    <label class="text-12 leading-4 text-black mb-10">İsim, Soyad</label>
+                    <input
+                    class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                    type="text"
+                    placeholder="İsim, Soyad"
+                    />
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-12 leading-4 text-black mb-10">E-mail</label>
+                    <input
+                    class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                    type="e-mail"
+                    placeholder="E-mail"
+                    />
+                </div>
+
+                <div class="flex flex-col col-span-2">
+                    <label class="text-12 leading-4 text-black mb-10">Görev</label>
+                    <div class="border border-solid border-platinum rounded-6 bg-snow px-9">
+                        <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-gray2 text-opacity-80">
+                            <option>Subject</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex flex-col col-span-2">
+                    <label class="text-12 leading-4 text-black mb-10">Metin</label>
+                    <textarea
+                        rows="5" placeholder='Metin'
+                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black resize-none"
+                    >
+                    </textarea>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-12 bg-lavender-gray shadow-lavender-gray-lg flex items-center px-15 h-40 cursor-pointer">
+                        <img src="img/icons/file-icon.svg" alt="file" width="16px" height="16px" />
+                        <span class="pr-16 w-full text-center text-base leading-5 font-semibold text-charcoal">CV yükle</span>
+                    </div>
+                    
+                    <input
+                    class="absolute top-0 left-0 w-full h-full opacity-0 rounded-12 border border-isabelline bg-snow text-14 py-5 px-14 outline-none placeholder-shown:text-gray placeholder:text-gray"
+                    placeholder="CV yükle"
+                    type='file'
+                    />
+                </div>
+
+                <button
+                class="rounded-12 bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-white text-base leading-5 font-semibold py-10 w-full">
+                    Gönder
+                </button>
+            </form>
+        </div>
+
+        <div class="flex justify-end">
+            <figure class="w-80per">
+                <img src="img/career.svg" width="518px" height="342px" alt="live-chat" class="object-contain" />
+            </figure>
+        </div>
+    </div>
+</div>

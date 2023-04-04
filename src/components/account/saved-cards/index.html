@@ -1,0 +1,29 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                KAYITLI  KARTLARIM
+            </h6>
+        </div>
+        
+        <div class="col-span-9 flex justify-end">
+            <p class="flex items-center text-13 leading-4 text-black">
+                <img src="img/icons/safety.svg" alt="safety" width="16px" height="16px" class="mr-9" />
+                Kayıtlı kartlarınız burada güvende.
+            </p>    
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        @@include('../account-menu.html')
+
+        <div class='col-span-9'>
+            <div class='grid grid-cols-2 gap-8'>
+                @@include('./saved-card-box.html')
+                @@include('./saved-card-box.html')
+                @@include('./saved-card-box.html')
+                @@include('./saved-card-box.html')
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="container mx-auto max-w-full flex flex-col pb-40">
+    <div>
+        <div class='shadow-black-shadow-xs bg-white py-15 pl-17 pr-30'>
+            <div class='flex flex-row justify-between items-center'>
+                <div class='flex flex-row items-center'>
+                    <figure class='mr-13 border border-solid border-gray2 rounded-half w-70 h-70 overflow-hidden'>
+                        <img src="img/brand.jpg" alt="store" width="70px" height="70px" class='w-full h-full object-cover' />
+                    </figure>
+
+                    <div>
+                        <div class='flex items-center'>
+                            <span class="bg-american-green rounded-6 text-white px-9 text-14 leading-5 font-semibold mr-13 inline-flex items-center justify-center">
+                                9.5
+                            </span>
+                            <h6 class='text-base leading-5 font-semibold text-black'>
+                                AVON
+                            </h6>
+                        </div>
+
+                        <div class='flex items-center mt-11'>
+                            <button class='rounded-4 bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-white text-14 leading-5 font-semibold py-5 px-10 mr-13'>
+                                Takip et
+                            </button>
+
+                            <span class='text-14 leading-5 text-gray2 font-semibold'>
+                                62.6B Takipçi
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='flex flex-row w-25per h-40'>
+                    <form class='rounded-8 border border-solid border-platinum bg-snow w-full flex flex-row py-10 px-12'>
+                        <input type='search' placeholder="Mağazada ürün ara"
+                        class="w-full text-base leading-5 outline-none text-black placeholder:text-spanish-gray2 placeholder:text-base placeholder:leading-5 bg-transparent" />
+                        <FaSearch class='text-vivid-cerise' />
+                    </form>
+                </div>  
+            </div>
+        </div>
+        
+        <div class='shadow-black-shadow-xs bg-white pl-16 pr-23 border-t border-solid border-gainsboro2'>
+            <div class='flex flex-row justify-between items-center'>
+                <ul class="flex list-none flex-wrap flex-row">
+
+                    <!--active item-->
+                    <li class="after:bg-vivid-cerise text-18 leading-6 font-semibold uppercase cursor-pointer py-18 px-7 mr-36 relative after:content[] after:absolute after:bottom-0 after:left-0 after:w-full after:h-4 after:rounded-t-6">
+                        ANA SAYFA
+                    </li>
+                    <!--active item-->
+                    
+                    <li class="after:bg-transparent text-18 leading-6 font-semibold uppercase cursor-pointer py-18 px-7 mr-36 relative after:content[] after:absolute after:bottom-0 after:left-0 after:w-full after:h-4 after:rounded-t-6">
+                        TÜM ÜRÜNLER
+                    </li>
+                    
+                    <li class="after:bg-transparent text-18 leading-6 font-semibold uppercase cursor-pointer py-18 px-7 mr-36 relative after:content[] after:absolute after:bottom-0 after:left-0 after:w-full after:h-4 after:rounded-t-6">
+                        Ürün Değerlendİrmelerİ
+                    </li>
+
+                    <li class="after:bg-transparent text-18 leading-6 font-semibold uppercase cursor-pointer py-18 px-7 mr-36 relative after:content[] after:absolute after:bottom-0 after:left-0 after:w-full after:h-4 after:rounded-t-6">
+                        Satıcı Değerlendİrmelerİ
+                    </li>
+
+                </ul>
+
+                <div class='relative'>
+                    @@include('../dropdowns/sort-dropdown.html')
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div>
+        <!--if main page is active-->
+        @@include('./store-main.html')
+        <!--if main page is active-->
+
+        <!--if all products is active-->
+        <!-- @@include('./all-products.html') -->
+        <!--if all products is active-->
+
+        <!--if product comments is active-->
+        <!-- @@include('./product-comments.html') -->
+        <!--if product comments is active-->
+
+        <!--if store comments is active-->
+        <!-- @@include('./store-comments.html') -->
+        <!--if store comments is active-->
+    </div>
+</div>                                                                                                                                           

@@ -1,0 +1,4951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--swiper-->
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+  
+
+<body class="bg-cultured box-border p-0 m-0 font-normal text-black">
+  <div class="flex flex-col min-h-screen justify-between">
+    <div class="flex flex-col">
+      <!--header-->
+<header class="fixed top-0 left-0 w-full 2xl:h-90 xl:h-90 lg:h-60 md:h-60 h-50 z-100 bg-white flex items-center justify-between shadow-black-shadow-xs px-12 lg:px-20 md:px-20 2xl:px-34 xl:px-34 pt-15 pb-12 lg:pt-12 md:pt-12 2xl:py-20 xl:py-20">
+  <div title="logo" class="mr-auto 3xl:mr-49">
+    <a href="/" title="logo" className="mr-49">
+      <span class="sr-only">Your Company</span>
+
+      <img src="img/logo.svg" alt="logo" width="176px" height="49px" class='w-116 2xl:w-176 xl:w-176' />
+    </a>
+  </div>
+
+  <div class="hidden 2xl:flex xl:flex flex-row">
+    <a
+      title="title"
+      href="#"
+      class="whitespace-nowrap inline text-14 leading-5 text-black underline ml-41"
+    >
+      Mağazanı yarat
+    </a>
+
+    <a
+      title="title"
+      href="/account/help/help"
+      class="inline text-14 leading-5 text-black ml-41"
+    >
+      Yardım
+    </a>
+
+    <div class="flex items-center mx-66">
+      <div class="relative">
+    <div class="flex items-center cursor-pointer">
+        <img src="img/tr.svg" width="19px" height="14px" alt="tr" />
+
+        <div class="ml-7 mr-10 text-14 leading-5 text-black">
+            Türkiye
+            <span class="text-silver-sand opacity-30 mx-5">
+            |
+            </span>
+            TR
+            <span class="text-silver-sand opacity-30 mx-5">
+            |
+            </span>
+            TRY
+        </div>
+
+        <img
+            src="img/down-drop.svg"
+            width="6px"
+            height="4px"
+            alt="down-arrow"
+        />
+    </div>
+
+    <!--if show dropdown--> 
+
+        <!-- <div class="absolute top-9 -left-22 w-216 bg-white shadow-dropdown-shadow rounded-6 
+        before:content[] before:absolute before:-top-2 before:left-6 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-10 before:rotate-45 before:rounded-1"
+      >
+        <div class="pt-13 pb-18 pl-12 pr-16 relative z-30">
+            <div class="mb-12">
+                <p class="text-13 leading-4 text-davys-grey font-semibold mb-7">
+                    Ülke
+                </p>
+                <div class="border border-solid border-platinum rounded-8 bg-snow h-40 px-7">
+                <select
+                    name="countries"
+                    id="countries"
+                    value=""
+                    class="cursor-pointer h-full bg-transparent text-14 leading-5 text-davys-grey text-opacity-80 relative w-full focus:outline-none"
+                >
+                    <option value="Türkiye">Türkiye</option>
+                    <option value="Azerbaycan">Azerbaycan</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <p class="text-13 leading-4 text-davys-grey font-semibold mb-7">
+                    Dil
+                </p>
+                <div class="border border-solid border-platinum rounded-8 bg-snow h-40 px-7">
+                <select
+                    name="languages"
+                    id="languages"
+                    value=""
+                    class="cursor-pointer h-full bg-transparent text-14 leading-5 text-davys-grey text-opacity-80 relative w-full focus:outline-none"
+                >
+                    <option value="TR">Türk</option>
+                    <option value="AZ">Azerbaycan</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <p class="text-13 leading-4 text-davys-grey font-semibold mb-7">
+                    Para birimi
+                </p>
+                <div class="border border-solid border-platinum rounded-8 bg-snow h-40 px-7">
+                    <select
+                        name="currency"
+                        id="currency"
+                        value=""
+                        class="cursor-pointer h-full bg-transparent text-14 leading-5 text-davys-grey text-opacity-80 relative w-full focus:outline-none"
+                    >
+                        <option value="TRY">TRY</option>
+                        <option value="AZN">AZN</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="rounded-8 bg-vivid-cerise w-full h-40 text-base leading-5 text-white font-semibold flex items-center justify-center">
+                Kaydet
+            </button>
+        </div>
+    </div> -->
+
+    <!--if show dropdown--> 
+</div>
+    </div>
+  </div>
+
+  <div class="hidden 2xl:block xl:block ml-14 mr-39 border-solid border border-silver-sand border-opacity-30 rounded-18 w-610 h-50 bg-cultured pl-14 pr-9">
+    <form
+      action=""
+      class="flex items-center h-full justify-between"
+    >
+      <label class="relative flex items-center h-full w-full">
+        <span class="sr-only">Search</span>
+        <span className="flex items-center">
+          <img
+            width="20px"
+            height="20px"
+            src="img/search.svg"
+            alt="search"
+          />
+        </span>
+        <input
+          class="placeholder:text-black placeholder:text-opacity-40 placeholder:text-base placeholder:leading-5 block bg-transparent
+                    text-base leading-5 text-black w-full px-14 focus:outline-none"
+          placeholder="Aradığınız herşey burada"
+          type="text"
+          name="search"
+        />
+      </label>
+      <button class="rounded-12 bg-vivid-cerise text-white shadow-black-shadow-xs pt-6 pb-8 text-base leading-5 font-semibold px-15 whitespace-nowrap">
+        Arama yap
+      </button>
+    </form>
+  </div>
+
+  <div class="hidden 2xl:flex xl:flex flex-row items-center">
+    <a
+      title="title"
+      href="/account/orders/my-orders"
+      class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41"
+    >
+      <img
+        width="19px"
+        height="20px"
+        src="img/order.svg"
+        alt="order"
+      />
+      <span class="inline mt-8">Siparişlerim</span>
+    </a>
+
+    <a
+      title="title"
+      href="/my-favorites"
+      class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41"
+    >
+      <img
+        width="20px"
+        height="20px"
+        src="img/fav.svg"
+        alt="fav"
+      />
+  
+      <span class="inline mt-8">Favorilerim</span>
+    </a>
+
+    <div class="ml-20 2xl:ml-41">
+    <div class="flex flex-col justify-center items-center text-14 leading-5 text-black cursor-pointer">
+        <div class="relative">
+          <img
+            width="18px"
+            height="20px"
+            src="img/cart.svg"
+            alt="fav"
+          />
+          
+          <span class="absolute -top-1 -right-4 rounded-half bg-vivid-cerise w-16 h-16 text-12 leading-4 font-semibold text-white text-center flex items-center justify-center">
+            2
+          </span>
+        </div>
+        <span class="inline mt-8">Sepetim</span>
+    </div>
+
+    <!--if show dropdown--> 
+
+        <!-- <div class="fixed right-0 top-24 -mt-6 w-full h-full z-80">
+            <div class="bg-black w-full h-full opacity-60 overflow-hidden"></div>
+        
+            <div class="absolute right-0 top-0 w-400 bg-transparent">
+                <div class='bg-white1'>
+                    <div class="flex items-center justify-between pl-26 pt-26 pb-23 pr-23 shadow-black-shadow-3md">
+                        <h6 class="font-semibold text-base leading-5 tracking-wider text-granite-gray">
+                            ÜRÜN SAYI: 
+                            <span class="text-black ml-5">
+                            6
+                            </span>
+                        </h6>
+
+                        <div class="cursor-pointer">
+                            <AiOutlineClose />
+                        </div>
+                    </div>
+
+                    <div class="pl-25 pr-19 h-screen">
+                        <div class="pr-19 pb-310 overflow-y-scroll h-full">
+
+                            <div class="flex items-center py-20 mr-19 border-b border-b-solid border-b-bright-gray3">
+                                <div class="w-67 h-101 border border-solid border-cultured2 mr-20 rounded-4 overflow-hidden">
+                                    <img src="img/cart-item.jpg" alt="cart-item" width="67px" height="101px" class="w-full h-full object-cover"/>
+                                </div>
+
+                                <div class="relative w-70per">
+                                    <h6 class="text-12 leading-4 text-black-olive font-semibold tracking-wider mb-6">
+                                        Tonny Black
+                                    </h6>
+
+                                    <p class="text-12 leading-4 text-granite-gray tracking-wider mb-6">
+                                        Beyaz Cilt Kadın  Sneaker BLS-Q-1
+                                    </p>
+
+                                    <p class="text-14 leading-5 text-vivid-cerise font-semibold mb-11">
+                                        110,49 TL
+                                    </p>
+
+                                    <div class="inline-flex rounded-7.27 bg-white border border-solid border-platinum">
+                                        <button class="text-24 leading-7 text-quick-silver1 w-32 flex items-center justify-center">
+                                        -
+                                        </button>
+
+                                        <div class="text-14 leading-5 text-chinese-black border-l-0.9 border-l-solid border-l-platinum border-r-0.9 border-r-solid border-r-platinum bg-snow flex items-center justify-center px-15">
+                                        1
+                                        </div>
+
+                                        <button class="text-24 leading-7 text-quick-silver1 w-32 flex items-center justify-center">
+                                        +
+                                        </button>
+                                    </div>
+
+                                    <button class="absolute -right-2 top-0">
+                                        <AiOutlineClose class="text-granite-gray text-12" />
+                                    </button>
+                                </div>
+                            </div>
+                           
+                            <div class="shadow-black-shadow-3md fixed bottom-0 right-0 pt-21 pb-23 px-26 w-400 bg-white1 z-30">
+                                <div class="flex justify-between items-center mb-13">
+                                    <span class="text-granite-gray text-18 leading-6 font-bold tracking-wider">
+                                        TOPLAM:
+                                    </span>
+                                    <span class="text-24 leading-10 text-vivid-cerise font-black">
+                                        482,98 TL
+                                    </span>
+                                </div>
+                                <button 
+                                class="rounded-6 bg-vivid-cerise text-18 leading-6 font-bold tracking-wider text-white w-full h-50 flex items-center justify-center">
+                                    <a href="/auth/non-member-login" title="cart">
+                                        SEPETE GİT
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+    <!--if show dropdown--> 
+</div>
+
+    <!--if not sign in-->
+    <div class="relative">
+    <div class="flex flex-col justify-center items-center text-14 leading-5 text-black ml-20 2xl:ml-41 cursor-pointer">
+        <img
+        width="18px"
+        height="20px"
+        src="img/user.svg"
+        alt="user"
+        />
+        <span class="inline mt-8">Hesabım</span>
+    </div>
+
+    <!--if show dropdown--> 
+
+        <!-- <div class="block absolute top-full -right-3 mt-10 w-224 rounded-6 p-22 pt-20 bg-white shadow-dropdown-shadow
+        before:content[] before:absolute before:-top-2 before:right-7 before:w-16 before:h-16 before:black-shadow-sm before:bg-white before:z-10 before:rotate-45 before:rounded-1"
+        >
+            
+            <a title='Giriş yapın' href='/login.html'
+            class="rounded-6 bg-vivid-cerise w-full h-40 text-base leading-5 text-white tracking-wider font-semibold flex items-center justify-center mb-10"
+            >
+                Giriş yapın
+            </a>
+
+            <a title='Yeni üye' href='/register.html'
+            class="rounded-6 bg-transparent text-granite-gray border border-solid border-light-silver1 w-full h-40 text-base leading-5 tracking-wider font-semibold flex items-center justify-center"
+            >
+                Yeni üye
+            </a>
+        
+        </div>  -->
+
+    <!--if show dropdown--> 
+</div>
+    <!--if not sign in-->
+
+
+    <!--if sign in-->
+    
+    <!--if sign in-->
+
+  </div>
+  <div class="2xl:hidden xl:hidden cursor-pointer">
+    <img src="../img/search.svg" />
+  </div>
+
+</header>
+<!--header-->
+      <div class="relative xl:px-34 2xl:px-34 bg-white mt-90 xxs:mt-50 xs:mt-50 sm:mt-50 md:mt-60 flex items-center">
+    <div class="xl:mr-30 2xl:mr-30 hidden 2xl:block xl:block">
+        <div
+        class="overflow-hidden w-34 h-34 bg-white border-solid border border-vivid-cerise rounded-10 relative z-80
+        shadow-rossoCorsa-shadow-xs focus:outline-none flex flex-col justify-center items-center cursor-pointer"
+        >
+        
+
+        <!--if not opened menu-->
+        <span class="-translate-y-5.6 absolute block w-16 h-1.6 bg-vivid-cerise transform transition duration-500 ease-in-out"></span>
+
+        <span class="opacity-100 absolute block w-16 h-1.6 bg-vivid-cerise transform transition duration-500 ease-in-out"></span>
+
+        <span class="translate-y-5.6 absolute block w-16 h-1.6 bg-vivid-cerise transform transition duration-500 ease-in-out"></span>
+        <!--if not opened menu-->
+
+        <!--if opened menu-->
+        <!-- <span class="rotate-45 absolute block w-16 h-1.6 bg-vivid-cerise transform transition duration-500 ease-in-out"></span>
+
+        <span class="opacity-0 absolute block w-16 h-1.6 bg-vivid-cerise transform transition duration-500 ease-in-out"></span>
+
+        <span class="-rotate-45 absolute block w-16 h-1.6 bg-vivid-cerise transform transition duration-500 ease-in-out"></span> -->
+        <!--if opened menu-->
+      </div>
+
+      
+      <!--if opened menu-->
+      
+      
+      <!--if opened menu-->
+    </div>
+
+    <div class="w-full px-20">
+      <ul class="flex items-center justify-between overflow-y-hidden xl:overflow-x-hidden 2xl:overflow-x-hidden  xxs:overflow-x-scroll xs:overflow-x-scroll 2xs:overflow-x-scroll sm:overflow-x-scroll md:overflow-x-scroll lg:overflow-x-scroll">
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Kadın"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Kadın
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Erkek"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Erkek
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Anne-Bebek"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Anne-Bebek
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Parfüm"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Parfüm
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Sağlık"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Sağlık
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Ağız bakım"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Ağız bakım
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="El-ayak bakım"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            El-ayak bakım
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Güneş bakım"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Güneş bakım
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Epilasyon"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Epilasyon
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Masaj"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Masaj
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Dövme -Tattoo"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Dövme -Tattoo
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Küaför ve berber"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Küaför ve berber
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="Evde güzelllik"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Evde güzelllik
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0">
+          <a
+            href="/campaigns.html"
+            title="Kampaniyalar"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Kampaniyalar
+          </a>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0 menuItem">
+          <a
+            href="/product-category.html"
+            title="İndirimler"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            İndirimler
+          </a>
+
+          <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible ease-in delay-150 transition-opacity absolute top-full left-0 bg-white shadow-dropdown-shadow w-maxContent rounded-6
+before:content[] before:absolute before:-top-2 before:left-4 before:w-16 before:h-16 before:shadow-black-shadow-xs before:bg-white before:z-80 before:rotate-45 before:rounded-1">
+<div class="relative z-90 bg-white rounded-6 overflow-hidden">
+  <div class="flex">
+    <div class="py-5 bg-snow1">
+      <ul class="border-r border-r-solid border-r-gainsboro3 pl-31 pr-26 py-13">
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Makyaj
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Cilt bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-vivid-cerise my-6">
+          <!--active-->
+          <a href="/product-details" title="title">
+            Saç bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Vücut bakım
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Parfüm
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Sağlık
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Güneş bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Ağız bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            El-Ayak bakımı
+          </a>
+        </li>
+        <li class="text-14 leading-5 font-semibold text-raisin-black my-6">
+          <a href="/product-details" title="title">
+            Professional Bakım
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-30 flex">
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-10">
+        <a href="/product-details" title="title" class="text-14 leading-5 mb-9 font-semibold text-raisin-black">
+          Şampuan Balsam
+        </a>
+
+        <ul>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Normal şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Özel şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 my-3 text-vivid-cerise underline">
+            <!--active-->
+            <a href="/product-details" title="title">
+              Kepeğ önleyici şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kuru şampuan
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Balsam
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Kondinsionerler
+            </a>
+          </li>
+          <li class="text-13 leading-5 text-black my-3">
+            <a href="/product-details" title="title">
+              Şampuan seti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        </li>
+
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0">
+          <a
+            href="/brands"
+            title="Markalar"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Markalar
+          </a>
+        </li>
+        
+        <li class="group list-none block relative mr-20 last:mr-0 2xl:m-0 xl:m-0">
+          <a
+            href="/blog-page.html"
+            title="Blog"
+            class="text-black text-opacity-90 py-11 2xl:py-18 xl:py-18 2xl:leading-5 text-14 leading-4 2xl:text-base xl:leading-5 font-semibold tracking-sl whitespace-nowrap block hover:text-vivid-cerise delay-150 transition-colors"
+          >
+            Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    </div>
+
+    <main>
+      <div class="bg-transparent flex flex-row justify-end container max-w-full mx-auto">
+    <nav class="flex flex-row justify-between sm:pt-12 sm:pb-14 xs:pt-12 xs:pb-14 xxs:pt-12 xxs:pb-14 lg:py-15 md:py-15 py-20 w-full">
+        <h2 class="sm:hidden xs:hidden xxs:hidden font-semibold text-18 leading-6 text-black">
+            <div class="flex flex-row">
+                <a class="" href="/blog-page.html">Blog</a>
+            </div>
+        </h2>
+        
+        <div class="flex flex-row text-quick-silver text-13 leading-4">
+            <div class="flex flex-row">
+                <div class="flex flex-row">
+                    <a class="" href="/">Home</a>
+                </div>
+                
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 512" class="mt-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                </svg>
+            </div>
+
+            <div class="flex flex-row">
+                <a class="" href="/blog-page.html">Blog</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+      <div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                Bize Ulaşın
+            </h6>
+        </div>
+    </div>
+
+    <div class='grid grid-cols-3 gap-7 mt-30 mb-60'>
+        <a href="/account-help-contact-us-mail-page.html" title="E-mail" class='active:text-vivid-cerise focus-within:text-vivid-cerise'>
+            <div class='rounded-8 shadow-black-shadow-2sm bg-white flex flex-col text-center pt-40 pb-27'>
+                <img class='self-center' src="img/icons/contact-mail-icon.svg" width="64px" height="64px" alt="E-mail" />
+                <h6 class='uppercase text-22 leading-8 font-semibold mt-18 mb-11'>
+                    E-mail
+                </h6>
+                <p class='text-black text-opacity-60 text-14 leading-5 px-100'>
+                    İlgimi çekebilecek kampanyalarla ve butik bültenleriyle ilgili e-mail almak istiyorum.
+                </p>
+            </div>
+        </a>
+
+        <a href="#" title="Telefon" class='active:text-vivid-cerise focus-within:text-vivid-cerise'>
+            <div class='rounded-8 shadow-black-shadow-2sm bg-white flex flex-col text-center pt-40 pb-27'>
+                <img class='self-center' src="img/icons/contact-phone-icon.svg" width="64px" height="64px" alt="Telefon" />
+                <h6 class='uppercase text-22 leading-8 font-semibold mt-18 mb-11'>
+                    TELEFON
+                </h6>
+                <p class='text-black text-opacity-60 text-14 leading-5 px-100'>
+                    Ürünleri iade edin veya değiştirin 
+                    <br /> Ürün iadesi posta etiketlerini yazdır
+                </p>
+            </div>
+        </a>
+
+        <a href="#" title="Canlı Çat" class='active:text-vivid-cerise focus-within:text-vivid-cerise'>
+            <div class='rounded-8 shadow-black-shadow-2sm bg-white flex flex-col text-center pt-40 pb-27'>
+                <img class='self-center' src="img/icons/livechat-icon.svg" width="64px" height="64px" alt="Canlı Çat" />
+                <h6 class='uppercase text-22 leading-8 font-semibold mt-18 mb-11'>
+                    Canlı Çat
+                </h6>
+                <p class='text-black text-opacity-60 text-14 leading-5 px-100'>
+                    İlgimi çekebilecek kampanyalarla ve butik bültenleriyle ilgili e-mail almak istiyorum.
+                </p>
+            </div>
+        </a>
+     </div>
+</div>
+    </main>
+
+    <!--footer-->
+<footer>
+    <div class="pt-15 lg:pt-20 md:pt-20 2xl:pt-30 xl:pt-30 pb-8 sm:pb-24 xs:pb-24 xxs:pb-24 bg-bright-gray2">
+        <div class="container max-w-full">
+            <div class="grid lg:flex md:flex  grid-cols-2 2xl:grid-cols-6 xl:grid-cols-6 2xl:gap-7 xl:gap-7">
+                <div class='sm:mb-10 xs:mb-10 xxs:mb-10 lg:w-20per md:w-20per'>
+                    <h6 class="sm:tracking-wider xs:tracking-wider xxs:tracking-wider text-base 2xl:text-18 xl:text-18 leading-5 2xl:leading-6 xl:leading-6 font-semibold text-jet tracking-wider mb-19 sm:mb-17 xs:mb-17 xxs:mb-17">
+                        Biz kimiz?
+                    </h6>
+
+                    <ul>
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="Hakkımızda" href="/about" class="text-jet">
+                                Hakkımızda 
+                            </a>
+                        </li> 
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a  title="Kariyer" href="/account/help/contact-career" class="text-jet">
+                                Kariyer 
+                            </a>
+                        </li>
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="İletişim" href="/contact" class="text-jet">
+                                İletişim 
+                            </a>
+                        </li>
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="Bizde Satış Yap" href="#" class="text-jet">
+                                Bizde Satış Yap 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='sm:mb-10 xs:mb-10 xxs:mb-10 lg:w-25per md:w-25per'>
+                    <h6 class="sm:tracking-wider xs:tracking-wider xxs:tracking-wider text-base 2xl:text-18 xl:text-18 leading-5 2xl:leading-6 xl:leading-6 font-semibold text-jet tracking-wider mb-19 sm:mb-17 xs:mb-17 xxs:mb-17">
+                        Yardım
+                    </h6>
+
+                    <ul>
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="/help/asked-questions" href="#" class="text-jet">
+                                Sıkça Sorulan Sorular 
+                            </a>
+                        </li> 
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="title" href="#" class="text-jet">
+                                Canlı Yardım 
+                            </a>
+                        </li>
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="title" href="#" class="text-jet">
+                                Naslk İade Ederim 
+                            </a>
+                        </li>
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="title" href="#" class="text-jet">
+                                Nasıl Sipariş Verilir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='sm:mb-10 xs:mb-10 xxs:mb-10 lg:w-22per md:w-22per'>
+                    <h6 class="sm:tracking-wider xs:tracking-wider xxs:tracking-wider text-base 2xl:text-18 xl:text-18 leading-5 2xl:leading-6 xl:leading-6 font-semibold text-jet tracking-wider mb-19 sm:mb-17 xs:mb-17 xxs:mb-17">
+                        Kampanyalar
+                    </h6>
+
+                    <ul>
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="title" href="/campaigns" class="text-jet">
+                                Özel kampanyalar 
+                            </a>
+                        </li> 
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="title" href="/campaigns" class="text-jet">
+                                Bayram kampanyaları
+                            </a>
+                        </li>
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="title" href="/campaigns" class="text-jet">
+                                Aktif Kampanyalar 
+                            </a>
+                        </li>
+
+                        <li class="mb-16 lg:mb-17 md:mb-17 2xl:mb-21 xl:mb-21 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a title="title" href="#" class="text-jet">
+                                VIP Üyelik 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='sm:mb-10 xs:mb-10 xxs:mb-10 lg:w-18per md:w-18per'>
+                    <h6 class="sm:tracking-wider xs:tracking-wider xxs:tracking-wider text-base 2xl:text-18 xl:text-18 leading-5 2xl:leading-6 xl:leading-6 font-semibold text-jet mb-19 sm:mb-17 xs:mb-17 xxs:mb-17">
+                        Sosyal Medya
+                    </h6>
+                    
+                    <ul>
+                        <li class="mb-10 lg:mb-7 md:mb-7 2xl:mb-19 xl:mb-19 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" class="text-jet flex items-center">
+                                <div class="mr-15">
+                                    <img src="img/facebook.svg" alt="facebook" width="24px" height="24px" />
+                                </div>
+                                Facebook
+                            </a>
+                        </li> 
+
+                        <li class="mb-10 lg:mb-7 md:mb-7 2xl:mb-15 xl:mb-15 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="text-jet flex items-center">
+                                <div class="mr-15">
+                                    <img src="img/instagram.svg" alt="instagram" width="24px" height="24px" />
+                                </div>
+                                Instagram 
+                            </a>
+                        </li> 
+
+                        <li class="mb-10 lg:mb-7 md:mb-7 2xl:mb-15 xl:mb-15 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer" class="text-jet flex items-center">
+                                <div class="mr-15">
+                                    <img src="img/twitter.svg" alt="twitter" width="24px" height="24px" />
+                                </div>
+                                Twitter 
+                            </a>
+                        </li> 
+
+                        <li class="mb-10 lg:mb-7 md:mb-7 2xl:mb-15 xl:mb-15 text-14 lg:text-13 md:text-13 leading-5 lg:leading-4 md:leading-4">
+                            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" class="text-jet flex items-center">
+                                <div class="mr-15">
+                                    <img src="img/youtube.svg" alt="youtube" width="24px" height="24px" />
+                                </div>
+                                Youtube
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+
+                <div class="sm:mt-10 xs:mt-10 xxs:mt-10 col-span-2 lg:w-26per md:w-26per">
+                    <h6 class="text-base 2xl:text-18 xl:text-18 leading-5 2xl:leading-6 xl:leading-6 font-semibold text-jet mb-15 lg:mb-10 md:mb-10 2xl:mb-19 xl:mb-19">
+                        İndirim ve yenilikler için abone olun
+                    </h6>
+                    
+                    <form action="" class="flex">
+                        <label class="block w-calc89 lg:w-calc40 md:w-calc40 2xl:w-263 xl:w-263">
+                            <span class="sr-only">E-mail</span>
+                            <input 
+                                class="placeholder:text-black placeholder:text-opacity-40 placeholder:text-14 2xl:placeholder:text-base xl:placeholder:text-base placeholder:leading-4 2xl:placeholder:leading-5 xl:placeholder:leading-5 bg-cultured block shadow-black-shadow-md px-18 lg:px-10 md:px-10 2xl:px-16 xl:px-16 h-40 lg:h-34 md:h-34 2xl:h-50 xl:h-50
+                                text-14 2xl:text-base xl:text-base leading-4 2xl:leading-5 xl:leading-5 w-full border-solid border border-silver-sand border-opacity-30 border-r-0 rounded-l-8 2xl:rounded-l-15 xl:rounded-l-15 focus:outline-none" 
+                                placeholder="E-mail" type="text" name="e-mail"
+                            />
+                        </label>
+
+                        <button class="lg:hidden md:hidden subscribe w-89 2xl:w-121 xl:w-121 h-40 2xl:h-50 xl:h-50 text-white font-semibold text-14 2xl:text-base xl:text-base leading-5 shadow-black-shadow-md rounded-r-8 2xl:rounded-r-15 xl:rounded-r-15">
+                            Abone ol
+                        </button>
+
+                        <button class="hidden lg:flex md:flex items-center justify-center subscribe pl-12 pr-13 w-40 h-34 text-white font-semibold shadow-black-shadow-md rounded-r-8">
+                            <img src="img/icons/subscribe.svg" alt='subscribe' width="13px" height="16px" />
+                        </button>
+                    </form>
+
+                    <div class="text-12 2xl:text-14 xl:text-14 leading-5 text-jet mt-19 2xl:max-w-half xl:max-w-half">
+                        Bültene kaydolarak Gizlilik Politikası
+                        <a title="Privacy Policy" href="#" class="underline mx-2 inline-block">
+                            Gizlilik Politikasını
+                        </a>
+                        kabul etmiş olursunuz
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-platinum1 py-14">
+        <div class="container max-w-full">
+            <div class="flex sm:flex-wrap xs:flex-wrap xxs:flex-wrap items-center">
+               
+                <p class="text-12 leading-4 text-jet mb-0 mr-40 2xl:mr-71 xl:mr-71 inline-block whitespace-nowrap">
+                    © Telif Hakkı 2022 website.com
+                </p>
+
+                <a href="#" title="title" class="text-12 leading-4 text-jet lg:mr-40 md:mr-40 2xl:mr-71 xl:mr-71 whitespace-nowrap">
+                    Kullanım Koşulları
+                </a>
+
+                <a href="#" title="title" class="sm:hidden xs:hidden xxs:hidden text-12 leading-4 text-jet lg:mr-40 md:mr-40 2xl:mr-71 xl:mr-71 whitespace-nowrap">
+                    DSM Grup
+                </a>
+
+                <a href="#" title="title" class="text-12 leading-4 text-jet sm:mt-11 xs:mt-11 xxs:mt-11 lg:mr-40 md:mr-40 2xl:mr-71 xl:mr-71 whitespace-nowrap">
+                    KVK ve Gizlilik Politikası
+                </a>
+                
+
+                <div class="ml-auto sm:mt-11 xs:mt-11 xxs:mt-11">
+                    <div class="flex items-center justify-end">
+                        <div class="ml-10 2xl:ml-40 xl:ml-40 w-32 2xl:w-56 xl:w-56">
+                            <img src="img/troy.svg" alt="troy" width="56px" height="26px" />
+                        </div>
+                        <div class="ml-10 2xl:ml-40 xl:ml-40 w-21 2xl:w-36 xl:w-36">
+                            <img src="img/mastercard.svg" alt="mastercard" width="36px" height="28px" />
+                        </div>
+                        <div class="ml-10 2xl:ml-40 xl:ml-40 w-30 2xl:w-52 xl:w-52">
+                            <img src="img/visa.svg" alt="visa" width="52px" height="16px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+    <div class="fixed right-11 top-2/3 z-80 flex flex-col items-center">
+      <!-- const scrollUp = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+} -->
+
+
+
+<div class="w-40 h-40 rounded-half shadow-rossoCorsa-shadow-2xs border border-solid border-vivid-cerise cursor-pointer transition ease-out delay-300 mb-32 flex items-center justify-center"
+onClick={scrollUp}>
+    <FaChevronUp class="text-vivid-cerise" />
+</div>
+
+
+
+      <div class="w-60 h-60 rounded-half shadow-rossoCorsa-shadow-2xs pink-gradient flex items-center justify-center cursor-pointer">
+    <img src="img/chat.svg" alt="chat" width="24px" height="24px" />
+</div>
+
+<!--if clicked open live chat modal-->
+    </div>
+  </div>
+
+  <!--swiper-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!--swiper-->
+
+<!--react icons-->
+<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/react-icons@4.8.0/fa/index.esm.min.js"></script> -->
+<!--react icons-->
+
+<script src="./js/all.min.js"></script>
+</body>
+</html>

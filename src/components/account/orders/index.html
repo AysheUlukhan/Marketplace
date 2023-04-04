@@ -1,0 +1,115 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                Sİparİşlerİm
+            </h6>
+        </div>
+
+        <div class="col-span-9 flex justify-end relative">
+            <button>
+                <div class="flex flex-row items-center">
+                <span class="text-13 leading-4 text-black">Son 1 ay</span>
+                <FaAngleDown class="text-davys-grey text-opacity-50 ml-9" />
+                </div>
+            </button>
+
+            <!--if show dropdown-->
+            <!-- <div class="block absolute top-full -right-8 mt-22 z-10 rounded-6 px-23 pt-23 pb-29 bg-white shadow-dropdown-shadow w-maxContent
+            before:content[] before:absolute before:-top-2 before:right-7 before:w-16 before:h-16 before:black-shadow-sm before:bg-white before:z-10 before:rotate-45 before:rounded-1" 
+            >
+                <ul class='text-13 leading-4'>
+                    <li class='text-vivid-cerise mb-13 last:mb-0 cursor-pointer'> <!--if active item-->
+                        <!-- Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+
+                    <li class='text-black mb-13 last:mb-0 cursor-pointer'>
+                        Lorem
+                    </li>
+                </ul>
+            </div> -->
+            <!--if show dropdown-->
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        @@include('../account-menu.html')
+
+        <div class='col-span-9'>
+            <div>
+                <div class="grid grid-cols-12 gap-5 mb-22">
+                    <ul class="col-span-8 flex list-none flex-wrap flex-row" role="tablist">
+                        <li class="mr-20"> <!--active tab-->
+                            <button class="border-vivid-cerise text-vivid-cerise text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                Tümü
+                            </button>
+                        </li>
+
+                        <li class="mr-20">
+                            <button class="border-black border-opacity-20 text-black text-opacity-30 text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                Devam eden
+                            </button>
+                        </li>
+
+                        <li class="mr-20">
+                            <button class="border-black border-opacity-20 text-black text-opacity-30 text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                İadeler
+                            </button>
+                        </li>
+
+                        <li class="mr-20">
+                            <button class="border-black border-opacity-20 text-black text-opacity-30 text-14 leading-5 font-semibold border border-solid rounded-8 flex items-center justify-center min-w-120 h-40">
+                                İptaller
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="col-span-4 border border-solid border-black border-opacity-20 rounded-8 h-40 px-13">
+                        <form class="flex items-center h-full justify-between">
+                            <label class="relative flex items-center h-full w-full">
+                                <span class="sr-only">Search</span>
+                            
+                                <input
+                                    class="w-full bg-transparent outline-none focus:outline-none placeholder:text-14 placeholder:leading-4 placeholder:text-black placeholder:text-opacity-30 text-14 font-semibold leading-4 text-black"
+                                    placeholder="Ürün ismi veya Marka ara"
+                                    type="text"
+                                    name="search"
+                                    value=""
+                                />
+              
+                                <button type='submit' class="flex items-center">
+                                    <img
+                                        width="20px"
+                                        height="20px"
+                                        src="img/search.svg"
+                                        alt="search"
+                                    />
+                                </button>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <div>
+                    @@include('./order-box.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

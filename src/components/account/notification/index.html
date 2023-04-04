@@ -1,0 +1,117 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                DUYURU TERCİHLERİM
+            </h6>
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        @@include('../account-menu.html')
+
+        <div class='col-span-9'>
+            <form>
+                <div class="grid grid-cols-3 gap-7">
+                    <div class="rounded-8 bg-white shadow-black-shadow-2sm pt-35 pb-20 px-24">
+                        <div class="flex items-center">
+                            <figure class="mr-20">
+                                <img
+                                    src="img/email-icon.svg"
+                                    alt="E-Mail"
+                                    width="64px"
+                                    height="64px"
+                                />
+                            </figure>
+                            <h4 class='text-22 leading-8 font-semibold text-black'>
+                                E-Mail
+                            </h4>
+                        </div>
+                          
+                        <p class='mt-24 mb-20 text-14 leading-5 text-black text-opacity-60 w-90per pr-20'>
+                            İlgimi çekebilecek kampanyalarla ve butik bültenleriyle ilgili e-mail almak istiyorum.
+                        </p>
+            
+                        <label class="accept-checkbox flex items-center text-14 leading-8 text-black">
+                            <input class="hidden" type="checkbox" name="accept" value="" />
+            
+                            <span class="block w-24 h-24 bg-white rounded-8 border-2 border-solid border-light-silver1 mr-10 bg-no-repeat bg-center cursor-pointer"></span>
+            
+                            E-Mail almak istiyorum
+                        </label>
+                    </div>
+          
+                    <div class="rounded-8 bg-white shadow-black-shadow-2sm pt-35 pb-20 px-24">
+                        <div class="flex items-center">
+                            <figure class="mr-20">
+                                <img
+                                    src="img/sms-icon.svg"
+                                    alt="SMS"
+                                    width="64px"
+                                    height="64px"
+                                />
+                            </figure>
+                            <h4 class='text-22 leading-8 font-semibold text-black'>
+                                SMS
+                            </h4>
+                        </div>
+                          
+                        <p class='mt-24 mb-20 text-14 leading-5 text-black text-opacity-60 w-90per pr-20'>
+                            İlgimi çekebilecek kampanyalarla ilgili sms almak istiyorum.
+                        </p>
+          
+                        <label class="accept-checkbox flex items-center text-14 leading-8 text-black">
+                            <input class="hidden" type="checkbox" name="accept" value="" />
+            
+                            <span class="block w-24 h-24 bg-white rounded-8 border-2 border-solid border-light-silver1 mr-10 bg-no-repeat bg-center cursor-pointer"></span>
+            
+                            SMS almak istiyorum
+                        </label>
+                    </div>
+          
+                    <div class="rounded-8 bg-white shadow-black-shadow-2sm pt-35 pb-20 px-24">
+                        <div class="flex items-center">
+                            <figure class="mr-20">
+                                <img
+                                    src="img/phone-icon.svg"
+                                    alt="Telefon Görüşmesi"
+                                    width="64px"
+                                    height="64px"
+                                />
+                            </figure>
+                            <h4 class='text-22 leading-8 font-semibold text-black'>
+                                Telefon Görüşmesi
+                            </h4>
+                        </div>
+                          
+                        <p class='mt-24 mb-20 text-14 leading-5 text-black text-opacity-60 w-90per pr-20'>
+                            İlgimi çekebilecek kampanyalarla ilgili çağrı almak istiyorum.
+                        </p>
+            
+                        <label class="accept-checkbox flex items-center text-14 leading-8 text-black">
+                            <input class="hidden" type="checkbox" name="accept" value="" />
+            
+                            <span class="block w-24 h-24 bg-white rounded-8 border-2 border-solid border-light-silver1 mr-10 bg-no-repeat bg-center cursor-pointer"></span>
+            
+                            Telefon görüşmesi istiyorum
+                        </label>
+                    </div>
+                </div>
+          
+                <div class="rounded-8 bg-white shadow-black-shadow-2sm mt-30 px-24 py-20">
+                    <div class="flex items-center">
+                        <button type="submit" name="reset"
+                        class="rounded-8 border border-solid border-vivid-cerise drop-shadow-rossoCorsa-shadow text-vivid-cerise text-14 leading-5 font-semibold py-11 min-w-154">
+                            Sıfırla
+                        </button>
+                        
+                        <button type="submit" name="post"
+                        class="rounded-8 bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-white text-14 leading-5 font-semibold py-11 min-w-154 ml-23">
+                            Güncelle
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

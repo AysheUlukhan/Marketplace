@@ -1,0 +1,151 @@
+<div class='flex flex-col container mx-auto max-w-full'>
+    <div class="grid grid-cols-12 bg-white rounded-8 shadow-black-shadow-sm py-20 px-24">
+        <div class="col-span-3">
+            <h6 class="font-semibold text-14 leading-5 text-black uppercase">
+                ADRES BİLGİLERİM
+            </h6>
+        </div>
+
+        <div class="col-span-9 flex justify-end">
+            <div class="flex items-center cursor-pointer">
+                <img src="img/icons/add-location.svg" alt='add-location' width="16px" height="16px" />
+
+                <span class="underline text-13 leading-4 text-black ml-10">
+                    Yeni Adres Ekle
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class='grid grid-cols-12 my-28 gap-7'>
+        @@include('../account-menu.html')
+
+        <div class='col-span-9'>
+            
+            <div class="rounded-8 bg-white shadow-black-shadow-2sm px-26 py-24 mb-30"><!--default address-->
+                <div class="flex items-center justify-between">
+                    <h6 class="text-base leading-5 font-semibold text-vivid-cerise">
+                        Kağıthane/ İstanbul
+                    </h6>
+        
+                    <div class="flex items-center">
+                        <button
+                            class="text-vivid-cerise text-12 leading-4 flex items-center cursor-pointer ml-30">
+                            <FaMapMarkerAlt class="mr-5" />
+                            Varsayılan et
+                        </button>
+            
+                        <button type="submit"
+                            class="text-black text-opacity-50 text-12 leading-4 flex items-center cursor-pointer ml-30"
+                        >
+                            <AiFillDelete class="mr-5" />
+                            Sil
+                        </button>
+            
+                        <button
+                            class="text-black text-opacity-50 text-12 leading-4 flex items-center cursor-pointer ml-30"
+                        >
+                            <AiTwotoneEdit class="mr-5" />
+                            Düzenle
+                        </button>
+                    </div>
+                </div>
+      
+                <div>
+                    <p class="text-base leading-5 font-semibold text-eerie-black mt-9">
+                        Talat Atayoğlu
+                    </p>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Mesihpaşa Mahallesi
+                    </p>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Ordu Caddesi Laleli iş merkezi No: 89 - 23 Laleli/İstanbul Mağaza ismi - 
+                    </p>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Butik Centilmen
+                    </p>
+
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Fatih - İstanbul
+                    </P>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        553*****66
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded-8 bg-white shadow-black-shadow-2sm px-26 py-24 mb-30">
+                <div class="flex items-center justify-between">
+                    <h6 class="text-base leading-5 font-semibold text-vivid-cerise">
+                        Kağıthane/ İstanbul
+                    </h6>
+        
+                    <div class="flex items-center">
+                        <button
+                            class="text-black text-opacity-50 text-12 leading-4 flex items-center cursor-pointer ml-30">
+                            <FaMapMarkerAlt class="mr-5" />
+                            Varsayılan et
+                        </button>
+            
+                        <button type="submit"
+                            class="text-black text-opacity-50 text-12 leading-4 flex items-center cursor-pointer ml-30"
+                        >
+                            <AiFillDelete class="mr-5" />
+                            Sil
+                        </button>
+            
+                        <button
+                            class="text-black text-opacity-50 text-12 leading-4 flex items-center cursor-pointer ml-30"
+                        >
+                            <AiTwotoneEdit class="mr-5" />
+                            Düzenle
+                        </button>
+                    </div>
+                </div>
+      
+                <div>
+                    <p class="text-base leading-5 font-semibold text-eerie-black mt-9">
+                        Talat Atayoğlu
+                    </p>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Mesihpaşa Mahallesi
+                    </p>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Ordu Caddesi Laleli iş merkezi No: 89 - 23 Laleli/İstanbul Mağaza ismi - 
+                    </p>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Butik Centilmen
+                    </p>
+
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        Fatih - İstanbul
+                    </P>
+        
+                    <p class="text-12 leading-4 text-granite-gray font-semibold mt-9">
+                        553*****66
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--add address modal-->
+<!-- @@include('../../modals/add-address-modal.html') -->
+<!--add address modal-->
+
+<!--edit address modal-->
+<!-- @@include('../../modals/edit-address-modal.html') -->
+<!--edit address modal-->
+
+<!--remove address modal-->
+<!-- @@include('../../modals/remove-address-modal.html') -->
+<!--remove address modal-->

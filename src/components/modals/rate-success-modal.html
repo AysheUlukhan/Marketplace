@@ -1,0 +1,44 @@
+<div class="flex justify-center fixed top-0 right-0 bottom-0 left-0 h-screen z-100">
+    <div class="bg-black w-full h-full opacity-60"></div>
+
+    <div class="bg-white w-23per opacity-100 pb-42 px-48 pt-36 z-100 absolute top-20 self-center rounded-6 shadow-black-shadow-2md">
+        <div>
+            <button class="absolute top-5 right-5 w-32 h-32 rounded-half bg-vivid-cerise shadow-rossoCorsa-shadow-sm text-base text-white flex items-center justify-center">
+                <AiOutlineClose />
+            </button>  
+
+            <div>
+                <div class='pb-14 border-b border-solid border-b-bright-gray3 text-center'>
+                    <img src="img/icons/checkmark.svg" alt="checkmark" width="88px" height="88px" class="mx-auto mb-20" />
+
+                    <h5 class="text-20 leading-6 font-bold -tracking-01 text-black">
+                        Değerlendirmeniz için teşekkür ederiz!
+                    </h5>
+
+                    <p class="text-spanish-gray1 text-13 leading-5 mt-7">
+                        Yorumunuz kontrol edildikden sonra en kısa zamanda aşağıdakı gibi yayına alınacaktır
+                    </p>
+                </div>
+
+                <div class='pt-23'>
+                    <div class='flex items-center justify-between mb-10'>
+                        <span class='text-14 leading-5 font-semibold text-black'>
+                            Mahir Velizade
+                        </span>
+
+                        <RatingStar rating={rating} />
+                    </div>
+
+                    <p class='text-14 leading-6 text-black text-opacity-70'>
+                        Çok güzel ve gayet şık duruyor . Şansızlık geçen hafta avm den aldım. İmdirimsiz . Keşke buraya daha önce baksaymışım :)
+                    </p>
+
+                    <button
+                    class="mt-20 w-full rounded-6 bg-vivid-cerise shadow-fashion-fuchsia text-white text-base leading-5 font-semibold tracking-wider py-15">
+                        Bağla
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

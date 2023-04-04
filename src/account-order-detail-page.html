@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./partials/head.html')  
+
+<body class="bg-cultured box-border p-0 m-0 font-normal text-black">
+  <div class="flex flex-col min-h-screen justify-between">
+    <div class="flex flex-col">
+      @@include('./partials/header.html')
+      @@include('./partials/menu.html')
+    </div>
+
+    <main>
+      @@include('./components/utils/breadcrumb.html')
+
+      @@include('./components/account/order-details/index.html')
+    </main>
+
+    @@include('./partials/footer.html')
+
+    <div class="fixed right-11 top-2/3 z-80 flex flex-col items-center">
+      @@include('./components/utils/up.html')
+      @@include('./components/utils/live-chat.html')
+    </div>
+  </div>
+
+  @@include('./partials/foot.html')
+</body>
+</html>
