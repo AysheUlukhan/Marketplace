@@ -104,6 +104,8 @@ module.exports = {
       platinum2: "#E0E1E2",
       platinum3: "#E7E7E7",
       platinum4: "#E3E3E3",
+      platinum5: '#E8E8E8',
+      platinum6: '#DDDFE7',
       snow: "#FAF9F9",
       snow1: "#FFF8FB",
       "light-steel-blue": "#b7c1d7",
@@ -158,7 +160,6 @@ module.exports = {
       gray: "#808080",
       gray1: "#BBBBBB",
       gray2: "#BDBDBD",
-      lightgray: "#D5D5D5",
       "blue-yonder": "#4267B2",
       "YInMn-blue": "#304989",
       bubbles: "#E4F3FF",
@@ -173,6 +174,7 @@ module.exports = {
       isabelline: "#F0EFEF",
       "azureish-white": "#DDE6EF",
       "dark-gray": "#A9A9A9",
+      "dark-gray1": "#AAAAAA",
       "queen-blue": "#477294",
       "japanese-indigo": "#1C3D57",
       "sonic-silver": "#77797D",
@@ -199,7 +201,9 @@ module.exports = {
       green: "#00AA4C",
       "purple-plum": "#A34FB1",
       "medium-champagne": "#FFEAA5",
-      "maize-crayola": "#FFC94E"
+      "maize-crayola": "#FFC94E",
+      "lavender-gray": "#BAC2CF",
+      charcoal: "#374255"
     },
     container: {
       center: true,
@@ -208,7 +212,7 @@ module.exports = {
         sm: "0.9378rem",
         md: "1.25rem",
         lg: "1.25rem",
-        xl: "12.938rem",
+        xl: "8rem",
         "2xl": "12.938rem",
       },
     },
@@ -313,8 +317,6 @@ module.exports = {
       90: "90px",
       112: "112px",
       120: "120px",
-      266: "266px",
-      255: "255px"
     },
     padding: {
       0: "0",
@@ -427,6 +429,8 @@ module.exports = {
       227.07: "227.07px",
       250: "250px",
       310: "310px",
+      "7per": "7%",
+      "14per": "14%",
       "16per": "16%",
       "21per": "21%",
     },
@@ -490,7 +494,6 @@ module.exports = {
       26: "26px",
       26.4: "26.4px",
       27: "27px",
-      28: "28px",
       30: "30px",
       32: "32px",
       32.3: "32.3px",
@@ -534,6 +537,7 @@ module.exports = {
       160: "160px",
       176: "176px",
       188: "188px",
+      190: "190px",
       206: "206px",
       216: "216px",
       224: "224px",
@@ -542,16 +546,14 @@ module.exports = {
       265: "265px",
       285: '285px',
       286: "286px",
-      299: "299px",
       300: "300px",
-      320: "320px",
+      330: "330px",
       372: "372px",
       390: "390px",
       400: "400px",
       452: "452px",
       562: "562px",
       610: "610px",
-      711: "711px",
       784: '784px',
       "18per": "18%",
       "20per": "20%",
@@ -684,6 +686,7 @@ module.exports = {
       288: "288px",
       290: "290px",
       292: "292px",
+      294: "294px",
       300: "300px",
       309: "309px",
       310: "310px",
@@ -742,6 +745,7 @@ module.exports = {
       183: "183px",
       280: "280px",
       286: "286px",
+      290: "290px"
     },
     maxWidth: {
       half: "50%",
@@ -749,13 +753,14 @@ module.exports = {
       full: "100%",
     },
     minHeight: {
+      "32": '32px',
       "168": '168px'
     },
     maxHeight: {
       "190px": "190px",
       "212px": "212px",
       215: "215px",
-      "294px": "294px",
+      294: "294px",
       300: "300px",
       340: "340px",
       386: "386px",
@@ -837,11 +842,8 @@ module.exports = {
       "black-shadow-3md": "0px 4px 30px rgba(0, 0, 0, 0.1)",
       "black-shadow-4md": "0px 4px 4px -4px rgba(0, 0, 0, 0.2)",
       "black-shadow-5md": "0px 2px 10px rgba(0, 0, 0, 0.02)",
-
-      "dropdown-shadow": "0px 2px 14px rgba(0, 0, 0, 0.2)",
-
       "black-shadow-6md": "0px 5px 30px rgba(0, 0, 0, 0.2)",
-
+      "dropdown-shadow": "0px 2px 14px rgba(0, 0, 0, 0.2)",
       "rossoCorsa-shadow-xs": "0px 3px 7px rgba(217, 7, 9, 0.2)",
       "rossoCorsa-shadow-2xs": "0px 10px 10px -5px rgba(217, 7, 9, 0.2)",
       "rossoCorsa-shadow-sm": "0px 4px 4px rgba(217, 7, 9, 0.23)",
@@ -851,7 +853,8 @@ module.exports = {
       "gogreen-shadow": "0px 4px 4px rgba(11, 193, 92, 0.1)",
       "gogreen-shadow-xs": "0px 4px 4px rgba(11, 193, 92, 0.23)",
       "gray-shadow": "0px 4px 4px rgba(129, 123, 123, 0.23)",
-      "american-green-xs": "0px 4px 4px rgba(46, 167, 72, 0.23)"
+      "american-green-xs": "0px 4px 4px rgba(46, 167, 72, 0.23)",
+      "lavender-gray-lg": "0px 4px 4px rgba(186, 194, 207, 0.54)"
     },
     dropShadow: {
       "black-shadow-2sm": "0px 2px 10px rgba(0, 0, 0, 0.05)",

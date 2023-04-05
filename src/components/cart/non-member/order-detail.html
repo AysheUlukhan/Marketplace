@@ -1,0 +1,22 @@
+<div class="container mx-auto max-w-full flex flex-col pb-100">
+    <div class="grid grid-cols-12 gap-7 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 md:grid-cols-1">
+        <div class="col-span-9 flex flex-col">
+            @@include('./order-detail-card.html')
+            @@include('./order-detail-card.html')
+            @@include('./order-detail-card.html')
+            @@include('./order-detail-card.html')
+            @@include('./order-detail-card.html')
+        </div>
+
+        <div class="col-span-3 shadow-black-shadow-2sm rounded-8 bg-white h-min mb-30 pt-23 px-34 pb-36 sticky lg:top-16 md:top-16 top-24">
+            @@include('../order-detail-summary.html')
+
+            <a href="/product-category.html" title='Alışverişe Devam Et' 
+            class='block shadow-rossoCorsa-shadow-sm bg-vivid-cerise font-semibold text-white text-base leading-5 py-15 rounded-6 text-center mt-11'>
+                Alışverişe devam et
+            </a>
+        </div>
+    </div>
+</div>
+
+@@include('../../main-page/feature-section.html')

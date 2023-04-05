@@ -1,0 +1,141 @@
+<div class="container mx-auto max-w-full flex flex-col pb-40">
+    <div class="bg-white rounded-8 shadow-black-shadow-2sm pt-46 pb-147">
+        <div class="container max-w-full">
+            <div class="flex justify-center">
+                <div class="w-75per">
+                    <div class="grid grid-cols-2 gap-20 items-end sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 ">
+                        <div class="flex flex-col">
+                            <h6 class="text-18 leading-6 font-semibold text-black">
+                                KART BİLGİLERİNİZİ GİRİNİZ
+                            </h6>
+
+                            <p class="text-13 leading-4 font-medium text-black text-opacity-60 mt-5 mb-27">
+                                Alışverişten faydalanın!
+                            </p>
+
+                            <form>
+                                <div class="flex flex-col mb-20">
+                                    <label class="text-14 leading-4 text-black text-opacity-80 mb-10">
+                                        Ad Soyad
+                                    </label>
+                                    <input
+                                        class="w-full border border-solid border-gainsboro2 rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                                        type="text"
+                                        placeholder="Ad Soyad"
+                                    />
+                                </div>
+                                
+                                <div class="flex flex-col mb-20">
+                                    <label class="text-14 leading-4 text-black text-opacity-80 mb-10">
+                                        Kart Numarası
+                                    </label>
+                                    <input
+                                        class="w-full border border-solid border-gainsboro2 rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                                        type="number"
+                                        placeholder="Kart Numarası"
+                                        maxLength="16"
+                                    />
+                                </div>
+                                
+                                <div class="grid grid-cols-12 gap-3 items-end mb-20">
+                                    <div class="col-span-9 flex flex-col">
+                                        <label class="text-14 leading-4 text-black text-opacity-80 mb-10">
+                                            Son Kullanma Tarihi
+                                        </label>
+
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="border border-solid border-gainsboro2 rounded-6 bg-snow px-9">
+                                                <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                                <option>Ay</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="border border-solid border-gainsboro2 rounded-6 bg-snow px-9">
+                                                <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                                <option>Yıl</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-span-3">
+                                        <label class="text-14 leading-4 text-black text-opacity-80 mb-10 flex items-center">
+                                            CVV
+                                            <AiOutlineInfoCircle class="text-vivid-cerise ml-5" />
+                                        </label>
+                                        <input
+                                            class="w-full border border-solid border-gainsboro2 rounded-6 bg-snow outline-none py-11 px-10 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4"
+                                            type="password"
+                                            placeholder="***"
+                                            maxLength="3"
+                                        />
+                                    </div>
+                                </div>
+
+                                <button class="bg-go-green text-white text-base leading-5 font-semibold rounded-6 py-10 w-full">
+                                    Tamamla
+                                </button>
+                            </form>
+                        </div>
+
+                        <div>
+                            <div class="border border-solid border-gainsboro2 shadow-black-shadow-2sm rounded-8 p-20">
+                                <div>
+    <p class="flex flex-row justify-between">
+        <span class="text-18 leading-6 font-semibold uppercase text-black">Sİparİş Özetİ</span>
+        <span class="text-base leading-5 text-vivid-cerise font-semibold">
+            (3 ürün)
+        </span>
+    </p>
+
+    <ul class="text-black mt-18 py-10 border-y border-y-solid border-y-bright-gray3">
+        <li class="flex flex-row justify-between items-center text-14 leading-10 mb-10 last:mb-0">
+            <span>Ürün Toplamı</span>
+            <span>689,97 TL</span>
+        </li>
+
+        <li class="flex flex-row justify-between items-center text-14 leading-10 mb-10 last:mb-0">
+            <span>İndirimler</span>
+            <span>20.00 TL</span>
+        </li>
+
+        <li class="flex flex-row justify-between items-center text-14 leading-10 mb-10 last:mb-0">
+            <span>Kargo Toplam</span>
+            <span>3,99 TL</span>
+        </li>
+
+        <li class="flex flex-row justify-between items-center text-14 leading-10 mb-10 last:mb-0">
+            <span class="line-clamp-1 w-60per">Koton - 75 TL Üzeri Kar lorem ipsum</span>
+            <span class="font-semibold text-vivid-cerise">-3,99 TL</span>
+        </li>
+        
+        <li class="flex flex-row justify-between items-center text-14 leading-10 mb-10 last:mb-0">
+            <span class="line-clamp-1 w-60per">Koton - Sepette %30 İnd lorem ipsum</span>
+            <span class="font-semibold text-vivid-cerise">-206,99 TL</span>
+        </li>
+    </ul>
+
+    <p class="flex flex-row justify-between items-center pt-10">
+        <span class="text-18 leading-5 font-bold">Genel Toplam</span>
+        <span class="text-24 leading-7 text-vivid-cerise font-black">
+            482,98 TL
+        </span>
+    </p>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--When clicked "Tamamla" then open this modal -->
+
+<!--When clicked "Tamamla" then open this modal -->
