@@ -4274,9 +4274,6 @@ input[type=number]::-webkit-outer-spin-button{
   .xxs\:visible{
     visibility: visible;
   }
-  .xxs\:invisible{
-    visibility: hidden;
-  }
   .xxs\:mb-10{
     margin-bottom: 10px;
   }
@@ -4306,6 +4303,9 @@ input[type=number]::-webkit-outer-spin-button{
   }
   .xxs\:ml-17{
     margin-left: 17px;
+  }
+  .xxs\:ml-21{
+    margin-left: 21px;
   }
   .xxs\:mr-13{
     margin-right: 13px;
@@ -4388,10 +4388,6 @@ input[type=number]::-webkit-outer-spin-button{
   .xxs\:bg-transparent{
     background-color: transparent;
   }
-  .xxs\:bg-vivid-cerise{
-    --tw-bg-opacity: 1;
-    background-color: rgb(225 26 125 / var(--tw-bg-opacity));
-  }
   .xxs\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4438,6 +4434,9 @@ input[type=number]::-webkit-outer-spin-button{
   .xxs\:pt-8{
     padding-top: 8px;
   }
+  .xxs\:text-10{
+    font-size: 10px;
+  }
   .xxs\:text-12{
     font-size: 12px;
   }
@@ -4464,9 +4463,6 @@ input[type=number]::-webkit-outer-spin-button{
 @media (min-width: 321px) and (max-width: 539px){
   .xs\:visible{
     visibility: visible;
-  }
-  .xs\:invisible{
-    visibility: hidden;
   }
   .xs\:mb-10{
     margin-bottom: 10px;
@@ -4497,6 +4493,9 @@ input[type=number]::-webkit-outer-spin-button{
   }
   .xs\:ml-17{
     margin-left: 17px;
+  }
+  .xs\:ml-21{
+    margin-left: 21px;
   }
   .xs\:mr-13{
     margin-right: 13px;
@@ -4570,10 +4569,6 @@ input[type=number]::-webkit-outer-spin-button{
   .xs\:bg-transparent{
     background-color: transparent;
   }
-  .xs\:bg-vivid-cerise{
-    --tw-bg-opacity: 1;
-    background-color: rgb(225 26 125 / var(--tw-bg-opacity));
-  }
   .xs\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4620,6 +4615,9 @@ input[type=number]::-webkit-outer-spin-button{
   .xs\:pt-8{
     padding-top: 8px;
   }
+  .xs\:text-10{
+    font-size: 10px;
+  }
   .xs\:text-12{
     font-size: 12px;
   }
@@ -4646,9 +4644,6 @@ input[type=number]::-webkit-outer-spin-button{
 @media (min-width: 540px) and (max-width: 711px){
   .sm\:visible{
     visibility: visible;
-  }
-  .sm\:invisible{
-    visibility: hidden;
   }
   .sm\:mb-10{
     margin-bottom: 10px;
@@ -4679,6 +4674,9 @@ input[type=number]::-webkit-outer-spin-button{
   }
   .sm\:ml-17{
     margin-left: 17px;
+  }
+  .sm\:ml-21{
+    margin-left: 21px;
   }
   .sm\:mr-13{
     margin-right: 13px;
@@ -4755,10 +4753,6 @@ input[type=number]::-webkit-outer-spin-button{
   .sm\:bg-transparent{
     background-color: transparent;
   }
-  .sm\:bg-vivid-cerise{
-    --tw-bg-opacity: 1;
-    background-color: rgb(225 26 125 / var(--tw-bg-opacity));
-  }
   .sm\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4805,6 +4799,9 @@ input[type=number]::-webkit-outer-spin-button{
   .sm\:pt-8{
     padding-top: 8px;
   }
+  .sm\:text-10{
+    font-size: 10px;
+  }
   .sm\:text-12{
     font-size: 12px;
   }
@@ -4849,6 +4846,9 @@ input[type=number]::-webkit-outer-spin-button{
   }
   .md\:mb-17{
     margin-bottom: 17px;
+  }
+  .md\:mb-20{
+    margin-bottom: 20px;
   }
   .md\:mb-36{
     margin-bottom: 36px;
@@ -4991,8 +4991,15 @@ input[type=number]::-webkit-outer-spin-button{
   .md\:rounded-5{
     border-radius: 5px;
   }
+  .md\:rounded-8{
+    border-radius: 8px;
+  }
   .md\:border-4{
     border-width: 4px;
+  }
+  .md\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
   .md\:p-14{
     padding: 14px;
@@ -5008,6 +5015,10 @@ input[type=number]::-webkit-outer-spin-button{
   .md\:px-20{
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .md\:px-22{
+    padding-left: 22px;
+    padding-right: 22px;
   }
   .md\:px-73{
     padding-left: 73px;
@@ -5030,6 +5041,9 @@ input[type=number]::-webkit-outer-spin-button{
   }
   .md\:pb-20{
     padding-bottom: 20px;
+  }
+  .md\:pb-29{
+    padding-bottom: 29px;
   }
   .md\:pb-30{
     padding-bottom: 30px;
@@ -5096,6 +5110,11 @@ input[type=number]::-webkit-outer-spin-button{
   }
   .md\:leading-5{
     line-height: 1.25rem;
+  }
+  .md\:shadow-black-shadow-sm{
+    --tw-shadow: 0px 1.83063px 9.15315px rgba(0, 0, 0, 0.05);
+    --tw-shadow-colored: 0px 1.83063px 9.15315px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
   .md\:line-clamp-2{
     overflow: hidden;
