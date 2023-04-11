@@ -1,0 +1,687 @@
+<div class="flex justify-between items-center bg-white xl:hidden lg:hidden 2xl:hidden md:hidden sm:visible xs:visible xxs:visible sm:mb-11 xs:mb-11 xxs:mb-11">
+    
+    <img src="img/left2.svg" alt="" class="ml-17">
+    <h2 class="py-15 text-14 font-semibold leading-4">SEPETİM</h2>
+    <div class="flex flex-col justify-center items-center text-14 leading-5 text-black cursor-pointer mr-15">
+        <div class="relative">
+          <img
+            width="17px"
+            height="20px"
+            src="img/cart.svg"
+            alt="fav"
+          />
+          
+          <span class="absolute -top-1 -right-2 rounded-half bg-vivid-cerise w-16 h-16 text-12 leading-4 font-semibold text-white text-center flex items-center justify-center">
+            6
+          </span>
+        </div>
+    </div>
+</div>
+<div class='container max-w-full pb-100'>
+    <div class="grid grid-cols-12 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 md:grid-cols-1 gap-7">
+        <div class="flex flex-col col-span-9">
+            <div class='bg-white shadow-black-shadow-2sm flex flex-row px-19 rounded-8 mb-20 sm:mb-11 xs:mb-11 xxs:mb-11'>
+                <ul class="flex list-none flex-wrap flex-row w-full">
+                    <li class="w-half pr-20 cursor-pointer">
+                        <div id="1"
+                        class="after:bg-vivid-cerise relative pt-13 pb-27 block h-full
+                        after:absolute after:bottom-0 after:left-0 after:w-full after:h-7 after:rounded-t-8">
+                            <div>
+                                <p class="text-vivid-cerise text-base leading-5 font-semibold flex items-center">
+                                    <FaMapMarkerAlt class="mr-5" />
+                                    Adres bilgileri
+                                </p>
+
+                                <p class="text-12 leading-4 text-quick-silver1 mt-11">
+                                    Yurtdışı iletilecek teslimat adresi giriniz. Doğru adrese <br/>
+                                    tesli̇m etmek i̇çi̇n lütfen doğru nakli̇ye detaylarini yaziniz
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="w-half pl-20 cursor-pointer">
+                        <div id="2"
+                        class="after:bg-transparent relative pt-13 pb-27 flex items-center justify-between h-full
+                        after:absolute after:bottom-0 after:left-0 after:w-full after:h-7 after:rounded-t-8">
+                            <div>
+                                <p class="text-davys-grey text-opacity-80 text-base leading-5 font-semibold flex items-center">
+                                    Ödeme Seçenekleri
+                                </p>
+
+                                <p class="text-12 leading-4 text-quick-silver1 mt-11">
+                                    Son kullanılan kredi kartı:
+                                    <span class="block">
+                                        İş Bankası - 5357 41** **** 5738
+                                    </span> 
+                                </p>
+                            </div>
+                            <img src="img/ssl.svg" alt="ssl" width="41px" height="49px" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-8 sm:mt-0 xs:mt-0 xxs:mt-0">
+                <!--if "Adres bilgileri" is active-->
+                <div class="block">
+                    <div class="bg-white shadow-black-shadow-2sm rounded-8 px-74 pt-25 pb-45 sm:px-20 xs:px-20 xxs:px-20">
+                        <h6 class="text-18 leading-10 font-semibold text-black mb-25">
+                            VAR OLAN KARGO ADRESLERİM
+                        </h6>
+
+                        <div class="grid grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 gap-6">
+                            <label class="custom-radio text-base leading-5 font-semibold text-raisin-black cursor-pointer">
+                                <div class="flex items-center">
+                                    <input class="hidden" type="radio" name="address" checked />
+
+                                    <span class="block w-20 h-20 border-2 border-solid border-light-silver1 rounded-half cursor-pointer bg-no-repeat bg-center mr-9"></span>
+
+                                    LİMAK - 0000011
+                                </div>
+
+                                <div class="rounded-8 border border-solid border-vivid-cerise p-18 mt-15">
+                                    <div class="flex items-center justify-between mb-9">
+                                        <p class="text-base leading-5 font-semibold text-vivid-cerise">
+                                            Kağıthane/ İstanbul
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-black text-opacity-50 flex items-center">
+                                            <AiFillEdit class="text-black mr-4" />
+                                            Düzenle
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <p class="text-base leading-5 font-semibold text-eerie-black mb-8">
+                                            Vüqar Aslanov
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-granite-gray font-semibold mb-8">
+                                            Hürriyet Mahallesi
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-granite-gray font-semibold line-clamp-1 mb-8">
+                                            Hürriyyet Mahallesi Akgül Sokak No 18 kat 3. daire 3 Hürriyyet Mahallesi Akgül Sokak No 18 kat 3. daire 3
+                                        </p>
+
+                                        <p class="flex items-center justify-between text-12 leading-4 text-granite-gray font-semibold">
+                                            <span>İstanbul</span>
+                                            <span>Kağıthane- İstanbul</span>
+                                            <span>553*****66</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="custom-radio text-base leading-5 font-semibold text-raisin-black cursor-pointer">
+                                <div class="flex items-center">
+                                    <input class="hidden" type="radio" name="address" />
+
+                                    <span class="block w-20 h-20 border-2 border-solid border-light-silver1 rounded-half cursor-pointer bg-no-repeat bg-center mr-9"></span>
+
+                                    LİMAK - 0000012
+                                </div>
+
+                                <div class="rounded-8 border border-solid border-vivid-cerise p-18 mt-15">
+                                    <div class="flex items-center justify-between mb-9">
+                                        <p class="text-base leading-5 font-semibold text-vivid-cerise">
+                                            Kağıthane/ İstanbul
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-black text-opacity-50 flex items-center">
+                                            <AiFillEdit class="text-black mr-4" />
+                                            Düzenle
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <p class="text-base leading-5 font-semibold text-eerie-black mb-8">
+                                            Vüqar Aslanov
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-granite-gray font-semibold mb-8">
+                                            Hürriyet Mahallesi
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-granite-gray font-semibold line-clamp-1 mb-8">
+                                            Hürriyyet Mahallesi Akgül Sokak No 18 kat 3. daire 3 Hürriyyet Mahallesi Akgül Sokak No 18 kat 3. daire 3
+                                        </p>
+
+                                        <p class="flex items-center justify-between text-12 leading-4 text-granite-gray font-semibold">
+                                            <span>İstanbul</span>
+                                            <span>Kağıthane- İstanbul</span>
+                                            <span>553*****66</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="custom-radio text-base leading-5 font-semibold text-raisin-black cursor-pointer">
+                                <div class="flex items-center">
+                                    <input class="hidden" type="radio" name="address" />
+
+                                    <span class="block w-20 h-20 border-2 border-solid border-light-silver1 rounded-half cursor-pointer bg-no-repeat bg-center mr-9"></span>
+
+                                    LİMAK - 0000013
+                                </div>
+
+                                <div class="rounded-8 border border-solid border-vivid-cerise p-18 mt-15">
+                                    <div class="flex items-center justify-between mb-9">
+                                        <p class="text-base leading-5 font-semibold text-vivid-cerise">
+                                            Kağıthane/ İstanbul
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-black text-opacity-50 flex items-center">
+                                            <AiFillEdit class="text-black mr-4" />
+                                            Düzenle
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <p class="text-base leading-5 font-semibold text-eerie-black mb-8">
+                                            Vüqar Aslanov
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-granite-gray font-semibold mb-8">
+                                            Hürriyet Mahallesi
+                                        </p>
+
+                                        <p class="text-12 leading-4 text-granite-gray font-semibold line-clamp-1 mb-8">
+                                            Hürriyyet Mahallesi Akgül Sokak No 18 kat 3. daire 3 Hürriyyet Mahallesi Akgül Sokak No 18 kat 3. daire 3
+                                        </p>
+
+                                        <p class="flex items-center justify-between text-12 leading-4 text-granite-gray font-semibold">
+                                            <span>İstanbul</span>
+                                            <span>Kağıthane- İstanbul</span>
+                                            <span>553*****66</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </label>
+
+                        </div>
+                        <div class="mt-24 xl:hidden lg:hidden 2xl:hidden md:hidden sm:visible xs:visible xxs:visible ">
+                            <button class="bg-vivid-cerise rounded-6 py-10 pr-41 w-full flex justify-center">
+                                <a href="/cart-address-add.html" class="text-base text-white leading-5 font-normal flex"><img src="img/plus.svg" alt="" class="mr-13"> YENİ KARGO ADRESİ  EKLEYİN</a>
+                            </button>
+                        </div>
+
+
+                        <div class="mt-30 visible sm:hidden xs:hidden xxs:hidden">
+                            <p class="text-18 text-black font-semibold flex items-center mb-6">
+                                <FaPlane class="text-vivid-cerise mr-14 text-25" />
+                                YENİ KARGO ADRESİ  EKLEYİN
+                            </p>
+                            <p class="text-14 text-quick-silver1">
+                                Doğru adrese tesli̇m etmek i̇çi̇n lütfen doğru nakli̇ye detaylarini yaziniz
+                            </p>
+
+                            <form action="" class="mt-20">
+                                <div class="grid grid-cols-2 gap-x-9 gap-y-6">
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Ad Soyad</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="text"
+                                        placeholder="Ad Soyad"
+                                        />
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Ülke*</label>
+                                        <div class="border border-solid border-platinum rounded-6 bg-snow px-13">
+                                            <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                                <option>Ülkeni seç</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Cep Telefonu*</label>
+                                        <div class="flex items-center border border-solid border-platinum rounded-6 bg-snow">
+                                            <div class="pl-10 pr-9 relative after:absolute after:top-1/2 after:right-0 after:-translate-y-1/2 after:w-1 after:h-half after:bg-platinum">
+                                                <select class="text-14 leading-4 font-semibold bg-transparent text-davys-grey text-opacity-80 py-9 pr-14 outline-none">
+                                                    <option>+90</option>
+                                                    <option>+50</option>
+                                                    <option>+85</option>
+                                                </select>
+                                            </div>
+
+                                            <input
+                                            class="w-full outline-none py-9 px-10 bg-transparent placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                            placeholder="Numaranız"
+                                            type="number"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Adres başlığı</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="text"
+                                        placeholder="Adres başlığı"
+                                        />
+                                    </div>
+
+                                    <div class="flex flex-col col-span-2">
+                                        <label class="text-12 leading-4 text-black mb-10">Adres satır 1</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="text"
+                                        placeholder="Mahalle, cadde, sokak ve diğer bilgilerinizi giriniz"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-x-8 gap-y-6 mt-24">
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">İl-Şehir</label>
+                                        <div class="border border-solid border-platinum rounded-6 bg-snow px-11">
+                                            <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                                <option>Seçiniz</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">İlçe</label>
+                                        <div class="border border-solid border-platinum rounded-6 bg-snow px-11">
+                                            <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                                <option>Seçiniz</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Vergi dairesi</label>
+                                        <div class="border border-solid border-platinum rounded-6 bg-snow px-11">
+                                            <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                                <option>Seçiniz</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Semt</label>
+                                        <div class="border border-solid border-platinum rounded-6 bg-snow px-11">
+                                            <select class="w-full bg-transparent outline-none py-9 text-14 leading-4 text-davys-grey text-opacity-80">
+                                                <option>Seçiniz</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">ZIP/Post kodu</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="text"
+                                        placeholder="Zip" />
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Kimlik numarası girin</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="text"
+                                        placeholder="Kimlik" />
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-x-8 gap-y-6 mt-24">
+                                    <div class="col-span-3">
+                                        <label class="accept-checkbox flex items-center text-14 leading-4 font-semibold text-black">
+                                            <input class="hidden" type="checkbox" name="accept" />
+
+                                            <span class="block w-24 h-24 bg-white rounded-8 border-2 border-solid border-light-silver1 mr-11 bg-no-repeat bg-center cursor-pointer"></span>
+
+                                            Hesap oluşturulmasını istiyorum
+                                        </label>
+                                    </div>
+
+                                    <!--if checked account-->
+                                    <!-- <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">E-mail</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="email"
+                                        placeholder="Email yazın" />
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Şifre</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="password"
+                                        placeholder="Şifre girin" />
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label class="text-12 leading-4 text-black mb-10">Şifre tekrar</label>
+                                        <input
+                                        class="w-full border border-solid border-platinum rounded-6 bg-snow outline-none py-11 px-13 placeholder:text-14 placeholder:leading-4 placeholder:text-gray2 text-14 leading-4 text-black"
+                                        type="password"
+                                        placeholder="Şifreyi yeniden girin" />
+                                    </div> -->
+                                    <!--if checked account-->
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-x-8 gap-y-6 mt-24">
+                                    <button class="rounded-6 border border-solid border-vivid-cerise text-vivid-cerise text-base font-semibold leading-5 py-10 w-full">
+                                        İptal et
+                                    </button>
+
+                                    <button class="rounded-6 bg-go-green text-white text-base font-semibold leading-5 py-10 w-full">
+                                        Kaydet
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--if "Adres bilgileri" is active-->
+
+                <!--if "Ödeme Seçenekleri" is active-->
+                <div class="hidden">
+                    <div class="bg-white shadow-black-shadow-2sm rounded-8 grid grid-cols-2 mb-28 sm:mb-10 xs:mb-10 xxs:mb-10 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1">
+                        <div class="px-32 py-24 border-r border-r-solid border-r-bright-gray5">
+                            <div class="grid grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 gap-7 mb-28">
+                                <div>
+                                    <h6 class="text-18 leading-6 font-semibold text-raisin-black mb-21">
+                                        Kart Bilgileri
+                                    </h6>
+
+                                    <button class="border border-solid border-vivid-cerise rounded-4 text-14 leading-5 text-raisin-black py-11 w-full font-semibold">
+                                        Başka bir Kart ile Ödeme Yap
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-7 mb-28 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1">
+                                <label class="custom-radio text-base leading-5 font-semibold text-raisin-black cursor-pointer">
+                                    <div class="flex items-center">
+                                        <input class="hidden" type="radio" name="card" checked />
+
+                                        <span class="block w-20 h-20 border-2 border-solid border-light-silver1 rounded-half cursor-pointer bg-no-repeat bg-center mr-9"></span>
+
+                                        International kartım
+                                    </div>
+
+                                    <figure class="mt-25 bg-cultured rounded-14 overflow-hidden h-140 relative border border-vivid-cerise">
+                                        <img src="img/icons/card.svg" alt="card" width="244px" height="140px" class="w-full h-full object-cover" />
+
+                                        <div class="absolute top-5 left-5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="26" viewBox="0 0 37 26" fill="none">
+                                                <path d="M18.7317 3.63867C16.1401 3.63867 14.082 5.77293 14.082 8.28831V17.74C14.082 20.3317 16.2163 22.3897 18.7317 22.3897C21.3233 22.3897 23.3813 20.2554 23.3813 17.74V8.28831C23.4575 5.69671 21.3233 3.63867 18.7317 3.63867Z" fill="#E11A7D"/>
+                                                <path d="M18.7316 2.95262C21.4756 2.95262 23.6861 5.01066 23.991 7.60226H29.0218V0.818359H8.44141V7.60226H13.4722C13.7771 5.01066 16.0638 2.95262 18.7316 2.95262Z" fill="#E11A7D"/>
+                                                <path d="M29.707 7.60226H36.6434V4.24842C36.6434 2.34283 35.1189 0.818359 33.2133 0.818359H29.707V7.60226Z" fill="#E11A7D"/>
+                                                <path d="M18.7316 23.0754C15.9875 23.0754 13.7771 21.0174 13.4722 18.4258H8.44141V25.2097H29.098V18.4258H24.0673C23.6861 21.0174 21.4757 23.0754 18.7316 23.0754Z" fill="#E11A7D"/>
+                                                <path d="M36.7195 8.28809H24.0664V17.7398H36.7195V8.28809Z" fill="#E11A7D"/>
+                                                <path d="M7.75471 18.4258H0.818359V21.7796C0.818359 23.6852 2.34283 25.2097 4.24842 25.2097H7.75471V18.4258Z" fill="#E11A7D"/>
+                                                <path d="M29.707 18.4258V25.2097H33.2133C35.1189 25.2097 36.6434 23.6852 36.6434 21.7796V18.4258H29.707Z" fill="#E11A7D"/>
+                                                <path d="M0.818359 17.7398H13.3953V8.28809H0.818359V17.7398Z" fill="#E11A7D"/>
+                                                <path d="M7.75471 7.60226V0.818359H4.24842C2.34283 0.818359 0.818359 2.34283 0.818359 4.24842V7.60226H7.75471Z" fill="#E11A7D"/>
+                                            </svg>
+                                        </div>
+                                    </figure>
+                                </label>
+
+                                <label class="custom-radio text-base leading-5 font-semibold text-raisin-black cursor-pointer">
+                                    <div class="flex items-center">
+                                        <input class="hidden" type="radio" name="card" />
+
+                                        <span class="block w-20 h-20 border-2 border-solid border-light-silver1 rounded-half cursor-pointer bg-no-repeat bg-center mr-9"></span>
+
+                                        International kartım
+                                    </div>
+
+                                    <figure class="mt-25 bg-cultured rounded-14 overflow-hidden h-140 relative">
+                                        <img src="img/icons/card.svg" alt="card" width="244px" height="140px" class="w-full h-full object-cover" />
+
+                                        <div class="absolute top-5 left-5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="26" viewBox="0 0 37 26" fill="none">
+                                                <path d="M18.7317 3.63867C16.1401 3.63867 14.082 5.77293 14.082 8.28831V17.74C14.082 20.3317 16.2163 22.3897 18.7317 22.3897C21.3233 22.3897 23.3813 20.2554 23.3813 17.74V8.28831C23.4575 5.69671 21.3233 3.63867 18.7317 3.63867Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M18.7316 2.95262C21.4756 2.95262 23.6861 5.01066 23.991 7.60226H29.0218V0.818359H8.44141V7.60226H13.4722C13.7771 5.01066 16.0638 2.95262 18.7316 2.95262Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M29.707 7.60226H36.6434V4.24842C36.6434 2.34283 35.1189 0.818359 33.2133 0.818359H29.707V7.60226Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M18.7316 23.0754C15.9875 23.0754 13.7771 21.0174 13.4722 18.4258H8.44141V25.2097H29.098V18.4258H24.0673C23.6861 21.0174 21.4757 23.0754 18.7316 23.0754Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M36.7195 8.28809H24.0664V17.7398H36.7195V8.28809Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M7.75471 18.4258H0.818359V21.7796C0.818359 23.6852 2.34283 25.2097 4.24842 25.2097H7.75471V18.4258Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M29.707 18.4258V25.2097H33.2133C35.1189 25.2097 36.6434 23.6852 36.6434 21.7796V18.4258H29.707Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M0.818359 17.7398H13.3953V8.28809H0.818359V17.7398Z" fill="#BABABA" fill-opacity="0.36"/>
+                                                <path d="M7.75471 7.60226V0.818359H4.24842C2.34283 0.818359 0.818359 2.34283 0.818359 4.24842V7.60226H7.75471Z" fill="#BABABA" fill-opacity="0.36"/>
+                                            </svg>
+                                        </div>
+                                    </figure>
+                                </label>
+                            </div>
+
+                            <label class="accept-checkbox flex items-center text-14 leading-4 font-semibold text-black">
+                                <input class="hidden" type="checkbox" name="accept" />
+
+                                <span class="block w-24 h-24 bg-white rounded-8 border-2 border-solid border-light-silver1 mr-11 bg-no-repeat bg-center cursor-pointer"></span>
+                                
+                                <p class="text-14 leading-5 font-semibold flex items-center">
+                                    <img src="img/threeD.svg" alt="3D" width="13px" height="16px" class="mr-9" />
+                                    3D Secure ile ödemek istiyorum.
+                                </p>
+                            </label>
+                        </div>
+
+                        <div class="px-32 py-24">
+                            <div class="text-raisin-black leading-6 mb-40">
+                                <h6 class="text-18 font-semibold">
+                                    Taksit Seçenekleri
+                                </h6>
+
+                                <p class="text-14">
+                                    Kartınıza uygun taksit seçeneğini seçiniz
+                                </p>
+                            </div>
+
+                            <div class="rounded-4 bg-cultured h-213 text-18 leading-6 font-semibold text-raisin-black text-opacity-30 flex items-center justify-center text-center">
+                                Banka kartlarına taksit <br/> yapılmamaktadır.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-black-shadow-2sm rounded-8 py-26 px-32 visible sm:hidden xs:hidden xxs:hidden">
+                        <h4 class="text-24 leading-8 font-semibold text-raisin-black mb-15">
+                            Sözleşmeler ve Formlar
+                        </h4>  
+
+                        <div class="my-15">
+                            <h6 class="text-18 leading-6 font-semibold text-raisin-black mb-20">
+                                Cayma Hakkı
+                            </h6>
+
+                            <div class="p-10 overflow-y-auto max-h-215 bg-cultured rounded-4">
+                                <article class="py-10 px-26">
+                                    <ul class="text-14 leading-5 text-black text-opacity-70">
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>  
+
+                        <div class="my-15">
+                            <h6 class="text-18 leading-6 font-semibold text-raisin-black mb-20">
+                                Ön Bilgilendirme Formu
+                            </h6>
+
+                            <div class="p-10 overflow-y-auto max-h-215 bg-cultured rounded-4">
+                                <article class="py-10 px-26">
+                                    <ul class="text-14 leading-5 text-black text-opacity-70">
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>  
+
+                        <div class="my-15">
+                            <h6 class="text-18 leading-6 font-semibold text-raisin-black mb-20">
+                                Mesafeli Satış Sözleşmesi
+                            </h6>
+
+                            <div class="p-10 overflow-y-auto max-h-215 bg-cultured rounded-4">
+                                <article class="py-10 px-26">
+                                    <ul class="text-14 leading-5 text-black text-opacity-70">
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                        <li>Teslimat tarihinden itibaren 15 gün içerisinde iade edebilirsiniz.</li>
+                                        <li>Nasıl İade Ederim?</li>
+                                        <li>trendyol.com ve mobile uygulamalarda yer alan `Hesabım` bölümünden `Siparişlerime` gidin.</li>
+                                        <li>`Sipariş detay` butonuna basın ve siparişinizin detaylarını görüntüleyin.</li>
+                                        <li>Kolay iade butonuna basın.</li>
+                                        <li>İade edilecek ürün ve iade nedeni seçin. Aynı üründen birden fazla satın aldıysanıziade edilecek ürün adedini de seçmeniz gerekir.</li>
+                                        <li>Birden fazla kargo seçeneği çıktığı durumda kargo seçiminizi yapın.</li>
+                                        <li>Ekranda çıkan iade kargo kodunu not alın.</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>         
+                    </div>
+
+                    <div  class="bg-white rounded-8 shadow-black-shadow-2sm lg:hidden xl:hidden 2xl:hidden sm:visible xs:visible xxs:visible">
+                        <button class="py-10 w-full text-base font-semibold leading-5">
+                            <a href="/contracts-forms.html">Sözleşmeler ve Formlar</a>
+                        </button>
+                    </div>
+                </div>
+                <!--if "Ödeme Seçenekleri" is active--> 
+            </div>
+        </div>
+        <div class="col-span-3 sm:col-span-9 xs:col-span-9 xxs:col-span-9 md:col-span-9">
+            <div class="rounded-8 shadow-black-shadow-2sm bg-white pt-10 pb-20 px-21">
+                @@include('./order-detail-summary.html')
+
+                <!--if rules not accepted then-->
+                <!-- <button disabled
+                class="disabled:bg-gray1 disabled:shadow-gray-shadow disabled:pointer-events-none bg-vivid-cerise shadow-raspberry-xs rounded-8 text-base leading-5 font-semibold text-white w-full mt-30">
+                    <a
+                    href="/cart-address-info-page.html"
+                    title="ÖDEME YAP"
+                    class="flex items-center justify-center py-15"
+                    >
+                    <span class="text-center pl-24 w-full">
+                            ÖDEME YAP
+                    </span>
+                    <FaAngleRight class="mr-10" />
+                    </a>
+                </button> -->
+                <!--if rules not accepted then-->
+
+                <!--if rules accepted then-->
+                <button 
+                class=" xl:visible lg:visible 2xl:visible md:visible sm:hidden xs:hidden xxs:hidden disabled:bg-gray1 disabled:shadow-gray-shadow disabled:pointer-events-none bg-vivid-cerise shadow-raspberry-xs rounded-8 text-base leading-5 font-semibold text-white w-full mt-30">
+                    <a
+                    href="/cart-address-info-page.html"
+                    title="ÖDEME YAP"
+                    class="flex items-center justify-center py-15"
+                    >
+                        <span class="text-center pl-24 w-full">
+                            ÖDEME YAP
+                        </span>
+                        <FaAngleRight class="mr-10" />
+                    </a>
+                </button>
+                <!--if rules accepted then-->
+            </div>
+
+            <div class=" xl:visible lg:visible 2xl:visible md:visible sm:hidden xs:hidden xxs:hiddenrounded-8 shadow-black-shadow-2sm bg-white py-20 px-18 mt-20">
+                <button class="rounded-8 border border-solid border-vivid-cerise text-base leading-5 font-semibold text-vivid-cerise tracking-wider w-full">
+                    <a href="/cart-page.html" title="SEPETE DÖN" class="block py-10">
+                        SEPETE DÖN
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-white flex justify-between px-16 xl:hidden lg:hidden 2xl:hidden md:hidden sm:visible xs:visible xxs:visible">
+    <div class="mt-12">
+        <p class="text-12 font-semibold text-granite-gray leading-4">TOPLAM:</p>
+        <p class="text-20 font-black text-vivid-cerise">482,98 TL</p>
+    </div>
+    <div class="mt-15 mb-12">
+        <button class="bg-gray2 text-white py-10 px-23 text-base font-bold leading-5 rounded-6"><a href="/cart-address-info-page.html">Sepeti Onayla</a></button>
+    </div>
+</div>
+
+<!--for edit address-->
+<!-- @@include('../../modals/edit-address-modal.html') -->
+<!--for edit address-->
+
+<!--if order is successfully-->
+<!-- @@include('../../modals/complete-order-modal.html') -->
+<!--if order is successfully-->

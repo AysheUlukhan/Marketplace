@@ -1,0 +1,117 @@
+<div class="flex justify-between items-center bg-white xl:hidden lg:hidden 2xl:hidden md:hidden sm:visible xs:visible xxs:visible">
+    
+        <img src="img/left2.svg" alt="" class="ml-17">
+        <h2 class="py-15 text-14 font-semibold leading-4">SEPETİM</h2>
+        <div class="flex flex-col justify-center items-center text-14 leading-5 text-black cursor-pointer mr-15">
+            <div class="relative">
+              <img
+                width="17px"
+                height="20px"
+                src="img/cart.svg"
+                alt="fav"
+              />
+              
+              <span class="absolute -top-1 -right-2 rounded-half bg-vivid-cerise w-16 h-16 text-12 leading-4 font-semibold text-white text-center flex items-center justify-center">
+                6
+              </span>
+            </div>
+        </div>
+</div>
+<div class="container mx-auto max-w-full pb-100 sm:mt-12 xs:mt-12 xxs:mt-12">
+    <div class="grid grid-cols-12 gap-7 sm:grid-cols-1 xs:grid-cols-1 xxs:grid-cols-1 md:grid-cols-1">
+        <div class="col-span-9 flex flex-col">
+            <div class="bg-white shadow-black-shadow-2sm py-15 px-24 rounded-8 mb-22 visible sm:hidden xs:hidden xxs:hidden">
+                <h6 class="text-base leading-5 font-semibold text-black mb-17">
+                    İndirim kuponlarım
+                </h6>
+
+                <div class="grid grid-cols-3 gap-x-7 gap-y-5">
+                    @@include('./discount-coupon-card.html')
+                    @@include('./discount-coupon-card.html')
+                    @@include('./discount-coupon-card.html')
+                    @@include('./discount-coupon-card.html')
+                </div>
+            </div>
+
+            <div class="bg-white shadow-black-shadow-2sm flex flex-row justify-between pl-11 pr-23 py-21 rounded-8 mb-18">
+                <div class="flex items-center">
+                    <label class="accept-checkbox flex items-center text-14 leading-4 text-black mr-40">
+                        <input class="hidden" type="checkbox" name="accept" />
+                        <span class="block w-22 h-22 rounded-4 border border-solid border-light-silver1 mr-16 bg-no-repeat bg-center cursor-pointer"></span>
+                        Tümünü seç
+                    </label>
+
+                    <div class="flex items-center visible sm:hidden xs:hidden xxs:hidden">
+                        <img
+                            src="img/icons/basket.svg"
+                            width="16px"
+                            height="16px"
+                            alt="product-icon"
+                        />
+                        <p class="text-13 font-semibold leading-4 mx-10 text-black">
+                            Ürün Sayı:
+                            <span class="text-vivid-cerise pl-6">3</span>
+                        </p>
+                    </div>
+                </div>
+
+                <a
+                    href="/product-category.html"
+                    title="Alışverişe devam et"
+                    class="underline text-14 leading-5 text-black"
+                >
+                    Alışverişe devam et
+                </a>
+            </div>
+
+            @@include('./order-detail-card.html')
+            @@include('./order-detail-card.html')
+            @@include('./order-detail-card.html')
+        </div>
+
+        <div class="col-span-3 sm:col-span-9 xs:col-span-9 xxs:col-span-9 md:col-span-9  rounded-8 shadow-black-shadow-2sm bg-white pt-10 pb-20 px-21 h-min sticky lg:top-16 md:top-16 top-24">
+            @@include('./order-detail-summary.html')
+
+            <!--if rules not accepted then-->
+            <!-- <button disabled
+            class="disabled:bg-gray1 disabled:shadow-gray-shadow disabled:pointer-events-none bg-vivid-cerise shadow-raspberry-xs rounded-8 text-base leading-5 font-semibold text-white w-full mt-30">
+                <a
+                  href="/cart-address-info-page.html"
+                  title="SEPETİ ONAYLA"
+                  class="flex items-center justify-center py-15"
+                >
+                  <span class="text-center pl-24 w-full">
+                        SEPETİ ONAYLA
+                  </span>
+                  <FaAngleRight class="mr-10" />
+                </a>
+            </button> -->
+            <!--if rules not accepted then-->
+
+            <!--if rules accepted then-->
+            <button 
+            class="visible sm:hidden xs:hidden xxs:hidden disabled:bg-gray1 disabled:shadow-gray-shadow disabled:pointer-events-none bg-vivid-cerise shadow-raspberry-xs rounded-8 text-base leading-5 font-semibold text-white w-full mt-30">
+                <a
+                  href="/cart-address-info-page.html"
+                  title="SEPETİ ONAYLA"
+                  class="flex items-center justify-center py-15"
+                >
+                  <span class="text-center pl-24 w-full">
+                        SEPETİ ONAYLA
+                  </span>
+                  <FaAngleRight class="mr-10" />
+                </a>
+            </button>
+            <!--if rules accepted then-->
+        </div>
+    </div>
+</div>
+<div class="bg-white flex justify-between px-16 xl:hidden lg:hidden 2xl:hidden md:hidden sm:visible xs:visible xxs:visible">
+        <div class="mt-12">
+            <p class="text-12 font-semibold text-granite-gray leading-4">TOPLAM:</p>
+            <p class="text-20 font-black text-vivid-cerise">482,98 TL</p>
+        </div>
+        <div class="mt-15 mb-12">
+            <button class="bg-vivid-cerise text-white py-10 px-23 text-base font-bold leading-5 rounded-6"><a href="/cart-address-info-page.html">Sepeti Onayla</a></button>
+        </div>
+</div>
